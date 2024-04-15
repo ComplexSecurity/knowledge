@@ -1,4 +1,4 @@
-site_name: My Docs
+site_name: Knowledge Base
 theme:
   name: dracula
   features:
@@ -37,7 +37,9 @@ markdown_extensions:
   - pymdownx.mark
   - attr_list
   - nl2br
+  - tables
 
 plugins:
   - search
   - callouts
+  - glightbox

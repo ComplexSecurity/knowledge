@@ -1,0 +1,1933 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+        <title>Systemctl - Knowledge Base</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+        
+        
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="../../assets/css/darcula-highlight.min.css">
+
+        <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../assets/css/dracula-ui.min.css">
+        <link rel="stylesheet" href="../../assets/css/mkdocs.min.css">
+
+        
+            <link  rel="icon" type="image/x-icon" href="../../assets/img/favicon.ico">
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+                <script>hljs.initHighlightingOnLoad();</script>
+
+ <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+
+<body class="drac-bg-black-secondary drac-text-grey-ternary drac-text drac-scrollbar-purple">
+
+    <main class="d-flex">
+
+        <!-- block sidebar -->
+            <nav id="sidebar" class="sidebar drac-bg-black">
+    <div class="custom-menu">
+        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Menu</span>
+        </button>
+    </div>
+
+    <div class="p-4">
+        
+            <img class="logo" src="../../assets/images/kb.png" height="150px">
+        
+
+        <div class="drac-text-center">
+            
+                <span class="drac-text drac-line-height drac-text-white">Knowledge Base</span>
+            
+        </div>
+
+        <div class="drac-box flex-column">
+            <ul class="dot-ul">
+                <li><div class="dot-li drac-bg-cyan"></div></li>
+                <li><div class="dot-li drac-bg-green"></div></li>
+                <li><div class="dot-li drac-bg-orange"></div></li>
+                <li><div class="dot-li drac-bg-pink"></div></li>
+                <li><div class="dot-li drac-bg-purple"></div></li>
+                <li><div class="dot-li drac-bg-red"></div></li>
+                <li><div class="dot-li drac-bg-yellow"></div></li>
+            </ul>
+        </div>
+
+        <hr class="drac-divider" />
+
+        <!-- block menu -->
+        <ul class="mb-5 drac-list drac-list-none">
+            
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    Homepage
+                </a>
+            </li>
+            <li class="drac-box">
+                <a href="../../page2/"
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    Page 2
+                </a>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#cves-collapse" aria-expanded="false">
+                    CVEs
+                </a>
+                <div class="collapse" id="cves-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2007-1036/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2007-1036
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2012-0002/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2012-0002
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2012-1675/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2012-1675
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2013-4786/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2013-4786
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2014-0224/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2014-0224
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2014-6321/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2014-6321
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2014-8272/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2014-8272
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2016-1287/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2016-1287
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2016-2107/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2016-2107
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2017-0143/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2017-0143
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2017-12542/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2017-12542
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2017-8917/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2017-8917
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2018-10993/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2018-10993
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2019-0686/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2019-0686
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2019-0708/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2019-0708
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2019-18935/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2019-18935
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2019-19781/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2019-19781
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2019-2725/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2019-2725
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2019-5392/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2019-5392
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2020-0609/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2020-0609
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2020-0796/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2020-0796
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2020-10487/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2020-10487
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2020-1350/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2020-1350
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2020-1472/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2020-1472
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2020-14882/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2020-14882
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2020-5902/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2020-5902
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2021-26855/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2021-26855
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2021-27850/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2021-27850
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2021-34473/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2021-34473
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2021-34527/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2021-34527
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2021-4034/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2021-4034
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2021-40449/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2021-40449
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2021-44228/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2021-44228
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2022-0847/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2022-0847
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2022-21882/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2022-21882
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2022-30190/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2022-30190
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#cheatsheets-collapse" aria-expanded="false">
+                    Cheatsheets
+                </a>
+                <div class="collapse" id="cheatsheets-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Cheatsheets/Active%20Directory%20Pentesting/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Active Directory Pentesting Cheatsheet
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Cheatsheets/Bash%20Scripting/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Bash Scripting
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Cheatsheets/Chrome%20URLs/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Chrome URLs/Flags
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Cheatsheets/Default%20Credentials%20Cheat%20Sheet/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Default Credentials Cheat Sheet
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Cheatsheets/Exchange%20Versions/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Exchange Versions
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Cheatsheets/GitHub%20Dorks/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            GitHub Dorks
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Cheatsheets/Google%20Dorks/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Google Dorks
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Cheatsheets/Headers%20%26%20Files/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Headers & Files
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Cheatsheets/List%20of%20TLDs/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            List of TLDs
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Cheatsheets/Miscellaneous/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Miscellaneous
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Cheatsheets/Netmasks%20%26%20Subnetting/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Netmasks & Subnetting
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Cheatsheets/PrivEsc%20Mindmap/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            PrivEsc Mindmap
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Cheatsheets/Regex/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Regex
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Cheatsheets/Windows%20Security%20Log%20References/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Windows Security Log References
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Cheatsheets/XSS/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            XSS
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Cheatsheets/XXE%20Injection/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            XML External Entity (XXE) Injection
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#macos-commands-collapse" aria-expanded="false">
+                    MacOS Commands
+                </a>
+                <div class="collapse" id="macos-commands-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../MacOS%20Commands/caffeinate/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Caffeinate
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../MacOS%20Commands/ditto/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ditto
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../MacOS%20Commands/firmwarepasswd/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Firmwarepasswd
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../MacOS%20Commands/ipconfig/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ipconfig
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../MacOS%20Commands/networkquality/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Networkquality
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../MacOS%20Commands/powermetrics/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Powermetrics
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../MacOS%20Commands/scutil/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Scutil
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../MacOS%20Commands/security/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Security
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../MacOS%20Commands/sha2/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Sha2
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../MacOS%20Commands/softwareupdate/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Softwareupdate
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../MacOS%20Commands/spctl/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Spctl
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../MacOS%20Commands/system_profiler/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            System_profiler
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../MacOS%20Commands/tweaks/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Tweaks
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class=" active 
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#unix-commands-collapse" aria-expanded="false">
+                    Unix Commands
+                </a>
+                <div class="collapse" id="unix-commands-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../apropos/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Apropos
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../apt/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Apt
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../awk/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Awk
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../base64/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Base64
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../biosdecode/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Biosdecode
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../blkid/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Blkid
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../cal/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Cal
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../cat/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Cat
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../chage/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Chage
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../chmod/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Chmod
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../chsh/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Chsh
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../comm/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Comm
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../crontab/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Crontab
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../cut/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Cut
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../date/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Date
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../dd/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Dd
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../delv/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Delv
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../df/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Df
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../diff/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Diff
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../dig/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Dig
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../dmesg/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Dmesg
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../faketime/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Faketime
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../fdisk/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Fdisk
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../file/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            File
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../find/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Find
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../fls/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Fls
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../free/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Free
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../ftp/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ftp
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../ghostscript/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ghostscript
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../gpg/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Gpg
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../grep/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Grep
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../groupadd/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Groupadd
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../groupdel/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Groupdel
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../hdparm/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Hdparm
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../head/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Head
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../history/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            History
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../host/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Host
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../ifconfig/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ifconfig
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../iotop/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Iotop
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../ip/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ip
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../iwconfig/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Iwconfig
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../journalctl/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Journalctl
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../kill/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Kill
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../ln/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ln
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../locate/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Locate
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../ls/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ls
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../lsb_release/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Lsb_release
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../lsblk/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Lsblk
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../lshw/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Lshw
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../lsmod/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Lsmod
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../lspci/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Lspci
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../lsusb/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Lsusb
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../lvextend/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Lvextend
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../md5sum/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Md5sum
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../mkdir/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Mkdir
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../mkpasswd/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Mkpasswd
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../modprobe/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Modprobe
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../mount/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Mount
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../mtr/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Mtr
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../nc/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Nc
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../ncdu/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ncdu
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../netplan/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Netplan
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../netstat/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Netstat
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../network-manager/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Network-manager
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../nm%20connection%20editor/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Nm Connection Manager
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../nmcli/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Nmcli
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../nslookup/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Nslookup
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../ntp/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ntp
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../passwd/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Passwd
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../pdbedit/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Pdbedit
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../ps/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ps
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../rev/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Rev
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../scp/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Scp
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../script/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Script
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../sed/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Sed
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../sha1sum/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Sha1sum
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../sha256sum/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Sha256sum
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../shuf/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Shuf
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../sort/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Sort
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../split/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Split
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../ss/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ss
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../strings/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Strings
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../sudo/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Sudo
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../sudoedit/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Sudoedit
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="./"
+            class=" active 
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Systemctl
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../tail/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Tail
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../tar/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Tar
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../tee/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Tee
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../tftp/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Tftp
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../timedatectl/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Timedatectl
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../touch/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Touch
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../tr/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Tr
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../uname/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Uname
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../upower/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Upower
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../vimdiff/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Vimdiff
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../watch/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Watch
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../wc/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Wc
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../wget/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Wget
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../xargs/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Xargs
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../xxd/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Xxd
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#windows-commands-collapse" aria-expanded="false">
+                    Windows Commands
+                </a>
+                <div class="collapse" id="windows-commands-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Windows%20Commands/azureAD/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            AzureAD
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Windows%20Commands/cmd/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CMD - Command Prompt
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Windows%20Commands/godmode/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            GodMode
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Windows%20Commands/ipconfig/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ipconfig
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Windows%20Commands/nbtstat/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Nbtstat
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Windows%20Commands/net%20group/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Net Group
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Windows%20Commands/net%20user/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Net User
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Windows%20Commands/net%20view/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Net View
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Windows%20Commands/netsh/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Netsh
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Windows%20Commands/nltest/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Nltest
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Windows%20Commands/nslookup/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Nslookup
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Windows%20Commands/powershell/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Powershell
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Windows%20Commands/regedit/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Regedit
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Windows%20Commands/route/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Route
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Windows%20Commands/schtasks/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Schtasks
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <!-- endblock -->
+    </div>
+</nav>
+        <!-- endblock -->
+
+        <nav class="divider drac-bg-purple-cyan"></nav>
+
+        <div class="content">
+            <!-- block header -->
+                <header>
+    <nav class="navbar navbar-expand-xl drac-bg-purple">
+        <div class="container-fluid">
+            
+            <button class="navbar-toggler w-100 text-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
+                aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
+                <ul class="navbar-nav text-md-center">
+
+                    <!-- block preview -->
+                    <li class="nav-item">
+                            
+        <div class="container">
+            <div class="row row-preview">
+                <div class="col">
+                    <a href="../sudoedit/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="../tail/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover" style="padding-left: 3%;">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block search -->
+                    <li class="nav-item"><div role="search" class="search-box">
+	<form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+		<input type="text" name="q" class="drac-input drac-input-search drac-input-white drac-text-white drac-bg-black-secondary"
+		placeholder="Search docs" title="Type search term here" />
+	</form>
+</div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block source -->
+                    <li class="nav-item">
+                        
+                    </li>
+                    <!--  endblock -->
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+            <!-- endblock -->
+
+            <!-- block content -->
+                <section class="p-md-5 section-content">
+    <article>
+        <p><h1 id="systemctl">Systemctl</h1>
+<p>Command-line utility used for managing system services and viewing their status.</p>
+<h2 id="usage">Usage</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>systemctl<span class="w"> </span><span class="o">[</span>OPTIONS...<span class="o">]</span><span class="w"> </span><span class="o">{</span>COMMAND<span class="o">}</span><span class="w"> </span>...
+</code></pre></div>
+<h2 id="flags">Flags</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>systemctl<span class="w"> </span><span class="o">[</span>OPTIONS...<span class="o">]</span><span class="w"> </span><span class="o">{</span>COMMAND<span class="o">}</span><span class="w"> </span>...
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>Query<span class="w"> </span>or<span class="w"> </span>send<span class="w"> </span>control<span class="w"> </span>commands<span class="w"> </span>to<span class="w"> </span>the<span class="w"> </span>systemd<span class="w"> </span>manager.
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">  </span>-h<span class="w"> </span>--help<span class="w">           </span>Show<span class="w"> </span>this<span class="w"> </span><span class="nb">help</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">     </span>--version<span class="w">        </span>Show<span class="w"> </span>package<span class="w"> </span>version
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">     </span>--system<span class="w">         </span>Connect<span class="w"> </span>to<span class="w"> </span>system<span class="w"> </span>manager
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">     </span>--user<span class="w">           </span>Connect<span class="w"> </span>to<span class="w"> </span>user<span class="w"> </span>service<span class="w"> </span>manager
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">  </span>-H<span class="w"> </span>--host<span class="o">=[</span>USER@<span class="o">]</span>HOST
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">                      </span>Operate<span class="w"> </span>on<span class="w"> </span>remote<span class="w"> </span>host
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">  </span>-M<span class="w"> </span>--machine<span class="o">=</span>CONTAINER
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">                      </span>Operate<span class="w"> </span>on<span class="w"> </span><span class="nb">local</span><span class="w"> </span>container
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">  </span>-t<span class="w"> </span>--type<span class="o">=</span>TYPE<span class="w">      </span>List<span class="w"> </span>units<span class="w"> </span>of<span class="w"> </span>a<span class="w"> </span>particular<span class="w"> </span><span class="nb">type</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">     </span>--state<span class="o">=</span>STATE<span class="w">    </span>List<span class="w"> </span>units<span class="w"> </span>with<span class="w"> </span>particular<span class="w"> </span>LOAD<span class="w"> </span>or<span class="w"> </span>SUB<span class="w"> </span>or<span class="w"> </span>ACTIVE<span class="w"> </span>state
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">     </span>--failed<span class="w">         </span>Shorcut<span class="w"> </span><span class="k">for</span><span class="w"> </span>--state<span class="o">=</span>failed
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">  </span>-p<span class="w"> </span>--property<span class="o">=</span>NAME<span class="w">  </span>Show<span class="w"> </span>only<span class="w"> </span>properties<span class="w"> </span>by<span class="w"> </span>this<span class="w"> </span>name
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">  </span>-a<span class="w"> </span>--all<span class="w">            </span>Show<span class="w"> </span>all<span class="w"> </span>properties/all<span class="w"> </span>units<span class="w"> </span>currently<span class="w"> </span><span class="k">in</span><span class="w"> </span>memory,
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="w">                      </span>including<span class="w"> </span>dead/empty<span class="w"> </span>ones.<span class="w"> </span>To<span class="w"> </span>list<span class="w"> </span>all<span class="w"> </span>units<span class="w"> </span>installed<span class="w"> </span>on
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="w">                      </span>the<span class="w"> </span>system,<span class="w"> </span>use<span class="w"> </span>the<span class="w"> </span><span class="s1">&#39;list-unit-files&#39;</span><span class="w"> </span><span class="nb">command</span><span class="w"> </span>instead.
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="w">  </span>-l<span class="w"> </span>--full<span class="w">           </span>Don<span class="s1">&#39;t ellipsize unit names on output</span>
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="s1">  -r --recursive      Show unit list of host and local containers</span>
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="s1">     --reverse        Show reverse dependencies with &#39;</span>list-dependencies<span class="s1">&#39;</span>
+<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="s1">     --job-mode=MODE  Specify how to deal with already queued jobs, when</span>
+<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a>
+<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a><span class="s1">Query or send control commands to the systemd manager.</span>
+<a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a>
+<a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a><span class="s1">  -h --help           Show this help</span>
+<a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a><span class="s1">     --version        Show package version</span>
+<a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a><span class="s1">     --system         Connect to system manager</span>
+<a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a><span class="s1">     --user           Connect to user service manager</span>
+<a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a><span class="s1">  -H --host=[USER@]HOST</span>
+<a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a><span class="s1">                      Operate on remote host</span>
+<a id="__codelineno-1-33" name="__codelineno-1-33" href="#__codelineno-1-33"></a><span class="s1">  -M --machine=CONTAINER</span>
+<a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a><span class="s1">                      Operate on local container</span>
+<a id="__codelineno-1-35" name="__codelineno-1-35" href="#__codelineno-1-35"></a><span class="s1">  -t --type=TYPE      List units of a particular type</span>
+<a id="__codelineno-1-36" name="__codelineno-1-36" href="#__codelineno-1-36"></a><span class="s1">     --state=STATE    List units with particular LOAD or SUB or ACTIVE state</span>
+<a id="__codelineno-1-37" name="__codelineno-1-37" href="#__codelineno-1-37"></a><span class="s1">     --failed         Shorcut for --state=failed</span>
+<a id="__codelineno-1-38" name="__codelineno-1-38" href="#__codelineno-1-38"></a><span class="s1">  -p --property=NAME  Show only properties by this name</span>
+<a id="__codelineno-1-39" name="__codelineno-1-39" href="#__codelineno-1-39"></a><span class="s1">  -a --all            Show all properties/all units currently in memory,</span>
+<a id="__codelineno-1-40" name="__codelineno-1-40" href="#__codelineno-1-40"></a><span class="s1">                      including dead/empty ones. To list all units installed on</span>
+<a id="__codelineno-1-41" name="__codelineno-1-41" href="#__codelineno-1-41"></a><span class="s1">                      the system, use the &#39;</span>list-unit-files<span class="s1">&#39; command instead.</span>
+<a id="__codelineno-1-42" name="__codelineno-1-42" href="#__codelineno-1-42"></a><span class="s1">  -l --full           Don&#39;</span>t<span class="w"> </span>ellipsize<span class="w"> </span>unit<span class="w"> </span>names<span class="w"> </span>on<span class="w"> </span>output
+<a id="__codelineno-1-43" name="__codelineno-1-43" href="#__codelineno-1-43"></a><span class="w">  </span>-r<span class="w"> </span>--recursive<span class="w">      </span>Show<span class="w"> </span>unit<span class="w"> </span>list<span class="w"> </span>of<span class="w"> </span>host<span class="w"> </span>and<span class="w"> </span><span class="nb">local</span><span class="w"> </span>containers
+<a id="__codelineno-1-44" name="__codelineno-1-44" href="#__codelineno-1-44"></a><span class="w">     </span>--reverse<span class="w">        </span>Show<span class="w"> </span>reverse<span class="w"> </span>dependencies<span class="w"> </span>with<span class="w"> </span><span class="s1">&#39;list-dependencies&#39;</span>
+<a id="__codelineno-1-45" name="__codelineno-1-45" href="#__codelineno-1-45"></a><span class="w">     </span>--job-mode<span class="o">=</span>MODE<span class="w">  </span>Specify<span class="w"> </span>how<span class="w"> </span>to<span class="w"> </span>deal<span class="w"> </span>with<span class="w"> </span>already<span class="w"> </span>queued<span class="w"> </span>jobs,<span class="w"> </span>when
+<a id="__codelineno-1-46" name="__codelineno-1-46" href="#__codelineno-1-46"></a><span class="w">                      </span>queueing<span class="w"> </span>a<span class="w"> </span>new<span class="w"> </span>job
+<a id="__codelineno-1-47" name="__codelineno-1-47" href="#__codelineno-1-47"></a><span class="w">  </span>-T<span class="w"> </span>--show-transaction
+<a id="__codelineno-1-48" name="__codelineno-1-48" href="#__codelineno-1-48"></a><span class="w">                      </span>When<span class="w"> </span>enqueuing<span class="w"> </span>a<span class="w"> </span>unit<span class="w"> </span>job,<span class="w"> </span>show<span class="w"> </span>full<span class="w"> </span>transaction
+<a id="__codelineno-1-49" name="__codelineno-1-49" href="#__codelineno-1-49"></a><span class="w">     </span>--show-types<span class="w">     </span>When<span class="w"> </span>showing<span class="w"> </span>sockets,<span class="w"> </span>explicitly<span class="w"> </span>show<span class="w"> </span>their<span class="w"> </span><span class="nb">type</span>
+<a id="__codelineno-1-50" name="__codelineno-1-50" href="#__codelineno-1-50"></a><span class="w">     </span>--value<span class="w">          </span>When<span class="w"> </span>showing<span class="w"> </span>properties,<span class="w"> </span>only<span class="w"> </span>print<span class="w"> </span>the<span class="w"> </span>value
+<a id="__codelineno-1-51" name="__codelineno-1-51" href="#__codelineno-1-51"></a><span class="w">  </span>-i<span class="w"> </span>--ignore-inhibitors
+<a id="__codelineno-1-52" name="__codelineno-1-52" href="#__codelineno-1-52"></a><span class="w">                      </span>When<span class="w"> </span>shutting<span class="w"> </span>down<span class="w"> </span>or<span class="w"> </span>sleeping,<span class="w"> </span>ignore<span class="w"> </span>inhibitors
+<a id="__codelineno-1-53" name="__codelineno-1-53" href="#__codelineno-1-53"></a><span class="w">     </span>--kill-who<span class="o">=</span>WHO<span class="w">   </span>Who<span class="w"> </span>to<span class="w"> </span>send<span class="w"> </span>signal<span class="w"> </span>to
+<a id="__codelineno-1-54" name="__codelineno-1-54" href="#__codelineno-1-54"></a><span class="w">  </span>-s<span class="w"> </span>--signal<span class="o">=</span>SIGNAL<span class="w">  </span>Which<span class="w"> </span>signal<span class="w"> </span>to<span class="w"> </span>send
+<a id="__codelineno-1-55" name="__codelineno-1-55" href="#__codelineno-1-55"></a><span class="w">     </span>--now<span class="w">            </span>Start<span class="w"> </span>or<span class="w"> </span>stop<span class="w"> </span>unit<span class="w"> </span><span class="k">in</span><span class="w"> </span>addition<span class="w"> </span>to<span class="w"> </span>enabling<span class="w"> </span>or<span class="w"> </span>disabling<span class="w"> </span>it
+<a id="__codelineno-1-56" name="__codelineno-1-56" href="#__codelineno-1-56"></a><span class="w">     </span>--dry-run<span class="w">        </span>Only<span class="w"> </span>print<span class="w"> </span>what<span class="w"> </span>would<span class="w"> </span>be<span class="w"> </span><span class="k">done</span>
+<a id="__codelineno-1-57" name="__codelineno-1-57" href="#__codelineno-1-57"></a><span class="w">  </span>-q<span class="w"> </span>--quiet<span class="w">          </span>Suppress<span class="w"> </span>output
+<a id="__codelineno-1-58" name="__codelineno-1-58" href="#__codelineno-1-58"></a><span class="w">     </span>--wait<span class="w">           </span>For<span class="w"> </span><span class="o">(</span>re<span class="o">)</span>start,<span class="w"> </span><span class="nb">wait</span><span class="w"> </span><span class="k">until</span><span class="w"> </span>service<span class="w"> </span>stopped<span class="w"> </span>again
+<a id="__codelineno-1-59" name="__codelineno-1-59" href="#__codelineno-1-59"></a><span class="w">                      </span>For<span class="w"> </span>is-system-running,<span class="w"> </span><span class="nb">wait</span><span class="w"> </span><span class="k">until</span><span class="w"> </span>startup<span class="w"> </span>is<span class="w"> </span>completed
+<a id="__codelineno-1-60" name="__codelineno-1-60" href="#__codelineno-1-60"></a><span class="w">     </span>--no-block<span class="w">       </span>Do<span class="w"> </span>not<span class="w"> </span><span class="nb">wait</span><span class="w"> </span><span class="k">until</span><span class="w"> </span>operation<span class="w"> </span>finished
+<a id="__codelineno-1-61" name="__codelineno-1-61" href="#__codelineno-1-61"></a><span class="w">     </span>--no-wall<span class="w">        </span>Don<span class="s1">&#39;t send wall message before halt/power-off/reboot</span>
+<a id="__codelineno-1-62" name="__codelineno-1-62" href="#__codelineno-1-62"></a><span class="s1">     --no-reload      Don&#39;</span>t<span class="w"> </span>reload<span class="w"> </span>daemon<span class="w"> </span>after<span class="w"> </span>en-/dis-abling<span class="w"> </span>unit<span class="w"> </span>files
+<a id="__codelineno-1-63" name="__codelineno-1-63" href="#__codelineno-1-63"></a><span class="w">     </span>--no-legend<span class="w">      </span>Do<span class="w"> </span>not<span class="w"> </span>print<span class="w"> </span>a<span class="w"> </span>legend<span class="w"> </span><span class="o">(</span>column<span class="w"> </span>headers<span class="w"> </span>and<span class="w"> </span>hints<span class="o">)</span>
+<a id="__codelineno-1-64" name="__codelineno-1-64" href="#__codelineno-1-64"></a><span class="w">     </span>--no-pager<span class="w">       </span>Do<span class="w"> </span>not<span class="w"> </span>pipe<span class="w"> </span>output<span class="w"> </span>into<span class="w"> </span>a<span class="w"> </span>pager
+<a id="__codelineno-1-65" name="__codelineno-1-65" href="#__codelineno-1-65"></a><span class="w">     </span>--no-ask-password
+<a id="__codelineno-1-66" name="__codelineno-1-66" href="#__codelineno-1-66"></a><span class="w">                      </span>Do<span class="w"> </span>not<span class="w"> </span>ask<span class="w"> </span><span class="k">for</span><span class="w"> </span>system<span class="w"> </span>passwords
+<a id="__codelineno-1-67" name="__codelineno-1-67" href="#__codelineno-1-67"></a><span class="w">     </span>--global<span class="w">         </span>Enable/disable/mask<span class="w"> </span>unit<span class="w"> </span>files<span class="w"> </span>globally
+<a id="__codelineno-1-68" name="__codelineno-1-68" href="#__codelineno-1-68"></a><span class="w">     </span>--runtime<span class="w">        </span>Enable/disable/mask<span class="w"> </span>unit<span class="w"> </span>files<span class="w"> </span>temporarily<span class="w"> </span><span class="k">until</span><span class="w"> </span>next
+<a id="__codelineno-1-69" name="__codelineno-1-69" href="#__codelineno-1-69"></a><span class="w">                      </span>reboot
+<a id="__codelineno-1-70" name="__codelineno-1-70" href="#__codelineno-1-70"></a><span class="w">  </span>-f<span class="w"> </span>--force<span class="w">          </span>When<span class="w"> </span>enabling<span class="w"> </span>unit<span class="w"> </span>files,<span class="w"> </span>override<span class="w"> </span>existing<span class="w"> </span>symlinks
+<a id="__codelineno-1-71" name="__codelineno-1-71" href="#__codelineno-1-71"></a><span class="w">                      </span>When<span class="w"> </span>shutting<span class="w"> </span>down,<span class="w"> </span>execute<span class="w"> </span>action<span class="w"> </span>immediately
+<a id="__codelineno-1-72" name="__codelineno-1-72" href="#__codelineno-1-72"></a><span class="w">     </span>--preset-mode<span class="o">=</span><span class="w">   </span>Apply<span class="w"> </span>only<span class="w"> </span>enable,<span class="w"> </span>only<span class="w"> </span>disable,<span class="w"> </span>or<span class="w"> </span>all<span class="w"> </span>presets
+<a id="__codelineno-1-73" name="__codelineno-1-73" href="#__codelineno-1-73"></a><span class="w">     </span>--root<span class="o">=</span>PATH<span class="w">      </span>Enable/disable/mask<span class="w"> </span>unit<span class="w"> </span>files<span class="w"> </span><span class="k">in</span><span class="w"> </span>the<span class="w"> </span>specified<span class="w"> </span>root
+<a id="__codelineno-1-74" name="__codelineno-1-74" href="#__codelineno-1-74"></a><span class="w">                      </span>directory
+<a id="__codelineno-1-75" name="__codelineno-1-75" href="#__codelineno-1-75"></a><span class="w">  </span>-n<span class="w"> </span>--lines<span class="o">=</span>INTEGER<span class="w">  </span>Number<span class="w"> </span>of<span class="w"> </span>journal<span class="w"> </span>entries<span class="w"> </span>to<span class="w"> </span>show
+<a id="__codelineno-1-76" name="__codelineno-1-76" href="#__codelineno-1-76"></a><span class="w">  </span>-o<span class="w"> </span>--output<span class="o">=</span>STRING<span class="w">  </span>Change<span class="w"> </span>journal<span class="w"> </span>output<span class="w"> </span>mode<span class="w"> </span><span class="o">(</span>short,<span class="w"> </span>short-precise,
+<a id="__codelineno-1-77" name="__codelineno-1-77" href="#__codelineno-1-77"></a><span class="w">                             </span>short-iso,<span class="w"> </span>short-iso-precise,<span class="w"> </span>short-full,
+<a id="__codelineno-1-78" name="__codelineno-1-78" href="#__codelineno-1-78"></a><span class="w">                             </span>short-monotonic,<span class="w"> </span>short-unix,
+<a id="__codelineno-1-79" name="__codelineno-1-79" href="#__codelineno-1-79"></a><span class="w">                             </span>verbose,<span class="w"> </span>export,<span class="w"> </span>json,<span class="w"> </span>json-pretty,<span class="w"> </span>json-sse,<span class="w"> </span>cat<span class="o">)</span>
+<a id="__codelineno-1-80" name="__codelineno-1-80" href="#__codelineno-1-80"></a><span class="w">     </span>--firmware-setup<span class="w"> </span>Tell<span class="w"> </span>the<span class="w"> </span>firmware<span class="w"> </span>to<span class="w"> </span>show<span class="w"> </span>the<span class="w"> </span>setup<span class="w"> </span>menu<span class="w"> </span>on<span class="w"> </span>next<span class="w"> </span>boot
+<a id="__codelineno-1-81" name="__codelineno-1-81" href="#__codelineno-1-81"></a><span class="w">     </span>--boot-loader-menu<span class="o">=</span>TIME
+<a id="__codelineno-1-82" name="__codelineno-1-82" href="#__codelineno-1-82"></a><span class="w">                      </span>Boot<span class="w"> </span>into<span class="w"> </span>boot<span class="w"> </span>loader<span class="w"> </span>menu<span class="w"> </span>on<span class="w"> </span>next<span class="w"> </span>boot
+<a id="__codelineno-1-83" name="__codelineno-1-83" href="#__codelineno-1-83"></a><span class="w">     </span>--boot-loader-entry<span class="o">=</span>NAME
+<a id="__codelineno-1-84" name="__codelineno-1-84" href="#__codelineno-1-84"></a><span class="w">                      </span>Boot<span class="w"> </span>into<span class="w"> </span>a<span class="w"> </span>specific<span class="w"> </span>boot<span class="w"> </span>loader<span class="w"> </span>entry<span class="w"> </span>on<span class="w"> </span>next<span class="w"> </span>boot
+<a id="__codelineno-1-85" name="__codelineno-1-85" href="#__codelineno-1-85"></a><span class="w">     </span>--plain<span class="w">          </span>Print<span class="w"> </span>unit<span class="w"> </span>dependencies<span class="w"> </span>as<span class="w"> </span>a<span class="w"> </span>list<span class="w"> </span>instead<span class="w"> </span>of<span class="w"> </span>a<span class="w"> </span>tree
+<a id="__codelineno-1-86" name="__codelineno-1-86" href="#__codelineno-1-86"></a>
+<a id="__codelineno-1-87" name="__codelineno-1-87" href="#__codelineno-1-87"></a>Unit<span class="w"> </span>Commands:
+<a id="__codelineno-1-88" name="__codelineno-1-88" href="#__codelineno-1-88"></a><span class="w">  </span>list-units<span class="w"> </span><span class="o">[</span>PATTERN...<span class="o">]</span><span class="w">             </span>List<span class="w"> </span>units<span class="w"> </span>currently<span class="w"> </span><span class="k">in</span><span class="w"> </span>memory
+<a id="__codelineno-1-89" name="__codelineno-1-89" href="#__codelineno-1-89"></a><span class="w">  </span>list-sockets<span class="w"> </span><span class="o">[</span>PATTERN...<span class="o">]</span><span class="w">           </span>List<span class="w"> </span>socket<span class="w"> </span>units<span class="w"> </span>currently<span class="w"> </span><span class="k">in</span><span class="w"> </span>memory,
+<a id="__codelineno-1-90" name="__codelineno-1-90" href="#__codelineno-1-90"></a><span class="w">                                      </span>ordered<span class="w"> </span>by<span class="w"> </span>address
+<a id="__codelineno-1-91" name="__codelineno-1-91" href="#__codelineno-1-91"></a><span class="w">  </span>list-timers<span class="w"> </span><span class="o">[</span>PATTERN...<span class="o">]</span><span class="w">            </span>List<span class="w"> </span>timer<span class="w"> </span>units<span class="w"> </span>currently<span class="w"> </span><span class="k">in</span><span class="w"> </span>memory,
+<a id="__codelineno-1-92" name="__codelineno-1-92" href="#__codelineno-1-92"></a><span class="w">                                      </span>ordered<span class="w"> </span>by<span class="w"> </span>next<span class="w"> </span>elapse
+<a id="__codelineno-1-93" name="__codelineno-1-93" href="#__codelineno-1-93"></a><span class="w">  </span>start<span class="w"> </span>UNIT...<span class="w">                       </span>Start<span class="w"> </span><span class="o">(</span>activate<span class="o">)</span><span class="w"> </span>one<span class="w"> </span>or<span class="w"> </span>more<span class="w"> </span>units
+<a id="__codelineno-1-94" name="__codelineno-1-94" href="#__codelineno-1-94"></a><span class="w">  </span>stop<span class="w"> </span>UNIT...<span class="w">                        </span>Stop<span class="w"> </span><span class="o">(</span>deactivate<span class="o">)</span><span class="w"> </span>one<span class="w"> </span>or<span class="w"> </span>more<span class="w"> </span>units
+<a id="__codelineno-1-95" name="__codelineno-1-95" href="#__codelineno-1-95"></a><span class="w">  </span>reload<span class="w"> </span>UNIT...<span class="w">                      </span>Reload<span class="w"> </span>one<span class="w"> </span>or<span class="w"> </span>more<span class="w"> </span>units
+<a id="__codelineno-1-96" name="__codelineno-1-96" href="#__codelineno-1-96"></a><span class="w">  </span>restart<span class="w"> </span>UNIT...<span class="w">                     </span>Start<span class="w"> </span>or<span class="w"> </span>restart<span class="w"> </span>one<span class="w"> </span>or<span class="w"> </span>more<span class="w"> </span>units
+<a id="__codelineno-1-97" name="__codelineno-1-97" href="#__codelineno-1-97"></a><span class="w">  </span>try-restart<span class="w"> </span>UNIT...<span class="w">                 </span>Restart<span class="w"> </span>one<span class="w"> </span>or<span class="w"> </span>more<span class="w"> </span>units<span class="w"> </span><span class="k">if</span><span class="w"> </span>active
+<a id="__codelineno-1-98" name="__codelineno-1-98" href="#__codelineno-1-98"></a><span class="w">  </span>reload-or-restart<span class="w"> </span>UNIT...<span class="w">           </span>Reload<span class="w"> </span>one<span class="w"> </span>or<span class="w"> </span>more<span class="w"> </span>units<span class="w"> </span><span class="k">if</span><span class="w"> </span>possible,
+<a id="__codelineno-1-99" name="__codelineno-1-99" href="#__codelineno-1-99"></a><span class="w">                                      </span>otherwise<span class="w"> </span>start<span class="w"> </span>or<span class="w"> </span>restart
+<a id="__codelineno-1-100" name="__codelineno-1-100" href="#__codelineno-1-100"></a><span class="w">  </span>try-reload-or-restart<span class="w"> </span>UNIT...<span class="w">       </span>If<span class="w"> </span>active,<span class="w"> </span>reload<span class="w"> </span>one<span class="w"> </span>or<span class="w"> </span>more<span class="w"> </span>units,
+<a id="__codelineno-1-101" name="__codelineno-1-101" href="#__codelineno-1-101"></a><span class="w">                                      </span><span class="k">if</span><span class="w"> </span>supported,<span class="w"> </span>otherwise<span class="w"> </span>restart
+<a id="__codelineno-1-102" name="__codelineno-1-102" href="#__codelineno-1-102"></a><span class="w">  </span>isolate<span class="w"> </span>UNIT<span class="w">                        </span>Start<span class="w"> </span>one<span class="w"> </span>unit<span class="w"> </span>and<span class="w"> </span>stop<span class="w"> </span>all<span class="w"> </span>others
+<a id="__codelineno-1-103" name="__codelineno-1-103" href="#__codelineno-1-103"></a><span class="w">  </span><span class="nb">kill</span><span class="w"> </span>UNIT...<span class="w">                        </span>Send<span class="w"> </span>signal<span class="w"> </span>to<span class="w"> </span>processes<span class="w"> </span>of<span class="w"> </span>a<span class="w"> </span>unit
+<a id="__codelineno-1-104" name="__codelineno-1-104" href="#__codelineno-1-104"></a><span class="w">  </span>is-active<span class="w"> </span>PATTERN...<span class="w">                </span>Check<span class="w"> </span>whether<span class="w"> </span>units<span class="w"> </span>are<span class="w"> </span>active
+<a id="__codelineno-1-105" name="__codelineno-1-105" href="#__codelineno-1-105"></a><span class="w">  </span>is-failed<span class="w"> </span>PATTERN...<span class="w">                </span>Check<span class="w"> </span>whether<span class="w"> </span>units<span class="w"> </span>are<span class="w"> </span>failed
+<a id="__codelineno-1-106" name="__codelineno-1-106" href="#__codelineno-1-106"></a><span class="w">  </span>status<span class="w"> </span><span class="o">[</span>PATTERN...<span class="p">|</span>PID...<span class="o">]</span><span class="w">          </span>Show<span class="w"> </span>runtime<span class="w"> </span>status<span class="w"> </span>of<span class="w"> </span>one<span class="w"> </span>or<span class="w"> </span>more<span class="w"> </span>units
+<a id="__codelineno-1-107" name="__codelineno-1-107" href="#__codelineno-1-107"></a><span class="w">  </span>show<span class="w"> </span><span class="o">[</span>PATTERN...<span class="p">|</span>JOB...<span class="o">]</span><span class="w">            </span>Show<span class="w"> </span>properties<span class="w"> </span>of<span class="w"> </span>one<span class="w"> </span>or<span class="w"> </span>more
+<a id="__codelineno-1-108" name="__codelineno-1-108" href="#__codelineno-1-108"></a><span class="w">                                      </span>units/jobs<span class="w"> </span>or<span class="w"> </span>the<span class="w"> </span>manager
+<a id="__codelineno-1-109" name="__codelineno-1-109" href="#__codelineno-1-109"></a><span class="w">  </span>cat<span class="w"> </span>PATTERN...<span class="w">                      </span>Show<span class="w"> </span>files<span class="w"> </span>and<span class="w"> </span>drop-ins<span class="w"> </span>of<span class="w"> </span>specified<span class="w"> </span>units
+<a id="__codelineno-1-110" name="__codelineno-1-110" href="#__codelineno-1-110"></a><span class="w">  </span>set-property<span class="w"> </span>UNIT<span class="w"> </span><span class="nv">PROPERTY</span><span class="o">=</span>VALUE...<span class="w"> </span>Sets<span class="w"> </span>one<span class="w"> </span>or<span class="w"> </span>more<span class="w"> </span>properties<span class="w"> </span>of<span class="w"> </span>a<span class="w"> </span>unit
+<a id="__codelineno-1-111" name="__codelineno-1-111" href="#__codelineno-1-111"></a><span class="w">  </span><span class="nb">help</span><span class="w"> </span>PATTERN...<span class="p">|</span>PID...<span class="w">              </span>Show<span class="w"> </span>manual<span class="w"> </span><span class="k">for</span><span class="w"> </span>one<span class="w"> </span>or<span class="w"> </span>more<span class="w"> </span>units
+<a id="__codelineno-1-112" name="__codelineno-1-112" href="#__codelineno-1-112"></a><span class="w">  </span>reset-failed<span class="w"> </span><span class="o">[</span>PATTERN...<span class="o">]</span><span class="w">           </span>Reset<span class="w"> </span>failed<span class="w"> </span>state<span class="w"> </span><span class="k">for</span><span class="w"> </span>all,<span class="w"> </span>one,<span class="w"> </span>or<span class="w"> </span>more
+<a id="__codelineno-1-113" name="__codelineno-1-113" href="#__codelineno-1-113"></a><span class="w">                                      </span>units
+<a id="__codelineno-1-114" name="__codelineno-1-114" href="#__codelineno-1-114"></a><span class="w">  </span>list-dependencies<span class="w"> </span><span class="o">[</span>UNIT<span class="o">]</span><span class="w">            </span>Recursively<span class="w"> </span>show<span class="w"> </span>units<span class="w"> </span>which<span class="w"> </span>are<span class="w"> </span>required
+<a id="__codelineno-1-115" name="__codelineno-1-115" href="#__codelineno-1-115"></a><span class="w">                                      </span>or<span class="w"> </span>wanted<span class="w"> </span>by<span class="w"> </span>this<span class="w"> </span>unit<span class="w"> </span>or<span class="w"> </span>by<span class="w"> </span>which<span class="w"> </span>this
+<a id="__codelineno-1-116" name="__codelineno-1-116" href="#__codelineno-1-116"></a><span class="w">                                      </span>unit<span class="w"> </span>is<span class="w"> </span>required<span class="w"> </span>or<span class="w"> </span>wanted
+<a id="__codelineno-1-117" name="__codelineno-1-117" href="#__codelineno-1-117"></a>
+<a id="__codelineno-1-118" name="__codelineno-1-118" href="#__codelineno-1-118"></a>Unit<span class="w"> </span>File<span class="w"> </span>Commands:
+<a id="__codelineno-1-119" name="__codelineno-1-119" href="#__codelineno-1-119"></a><span class="w">  </span>list-unit-files<span class="w"> </span><span class="o">[</span>PATTERN...<span class="o">]</span><span class="w">        </span>List<span class="w"> </span>installed<span class="w"> </span>unit<span class="w"> </span>files
+<a id="__codelineno-1-120" name="__codelineno-1-120" href="#__codelineno-1-120"></a><span class="w">  </span><span class="nb">enable</span><span class="w"> </span><span class="o">[</span>UNIT...<span class="p">|</span>PATH...<span class="o">]</span><span class="w">            </span>Enable<span class="w"> </span>one<span class="w"> </span>or<span class="w"> </span>more<span class="w"> </span>unit<span class="w"> </span>files
+<a id="__codelineno-1-121" name="__codelineno-1-121" href="#__codelineno-1-121"></a><span class="w">  </span>disable<span class="w"> </span>UNIT...<span class="w">                     </span>Disable<span class="w"> </span>one<span class="w"> </span>or<span class="w"> </span>more<span class="w"> </span>unit<span class="w"> </span>files
+<a id="__codelineno-1-122" name="__codelineno-1-122" href="#__codelineno-1-122"></a><span class="w">  </span>reenable<span class="w"> </span>UNIT...<span class="w">                    </span>Reenable<span class="w"> </span>one<span class="w"> </span>or<span class="w"> </span>more<span class="w"> </span>unit<span class="w"> </span>files
+<a id="__codelineno-1-123" name="__codelineno-1-123" href="#__codelineno-1-123"></a><span class="w">  </span>preset<span class="w"> </span>UNIT...<span class="w">                      </span>Enable/disable<span class="w"> </span>one<span class="w"> </span>or<span class="w"> </span>more<span class="w"> </span>unit<span class="w"> </span>files
+<a id="__codelineno-1-124" name="__codelineno-1-124" href="#__codelineno-1-124"></a><span class="w">                                      </span>based<span class="w"> </span>on<span class="w"> </span>preset<span class="w"> </span>configuration
+<a id="__codelineno-1-125" name="__codelineno-1-125" href="#__codelineno-1-125"></a><span class="w">  </span>preset-all<span class="w">                          </span>Enable/disable<span class="w"> </span>all<span class="w"> </span>unit<span class="w"> </span>files<span class="w"> </span>based<span class="w"> </span>on
+<a id="__codelineno-1-126" name="__codelineno-1-126" href="#__codelineno-1-126"></a><span class="w">                                      </span>preset<span class="w"> </span>configuration
+<a id="__codelineno-1-127" name="__codelineno-1-127" href="#__codelineno-1-127"></a><span class="w">  </span>is-enabled<span class="w"> </span>UNIT...<span class="w">                  </span>Check<span class="w"> </span>whether<span class="w"> </span>unit<span class="w"> </span>files<span class="w"> </span>are<span class="w"> </span>enabled
+<a id="__codelineno-1-128" name="__codelineno-1-128" href="#__codelineno-1-128"></a><span class="w">  </span>mask<span class="w"> </span>UNIT...<span class="w">                        </span>Mask<span class="w"> </span>one<span class="w"> </span>or<span class="w"> </span>more<span class="w"> </span>units
+<a id="__codelineno-1-129" name="__codelineno-1-129" href="#__codelineno-1-129"></a><span class="w">  </span>unmask<span class="w"> </span>UNIT...<span class="w">                      </span>Unmask<span class="w"> </span>one<span class="w"> </span>or<span class="w"> </span>more<span class="w"> </span>units
+<a id="__codelineno-1-130" name="__codelineno-1-130" href="#__codelineno-1-130"></a><span class="w">  </span>link<span class="w"> </span>PATH...<span class="w">                        </span>Link<span class="w"> </span>one<span class="w"> </span>or<span class="w"> </span>more<span class="w"> </span>units<span class="w"> </span>files<span class="w"> </span>into
+<a id="__codelineno-1-131" name="__codelineno-1-131" href="#__codelineno-1-131"></a><span class="w">                                      </span>the<span class="w"> </span>search<span class="w"> </span>path
+<a id="__codelineno-1-132" name="__codelineno-1-132" href="#__codelineno-1-132"></a><span class="w">  </span>revert<span class="w"> </span>UNIT...<span class="w">                      </span>Revert<span class="w"> </span>one<span class="w"> </span>or<span class="w"> </span>more<span class="w"> </span>unit<span class="w"> </span>files<span class="w"> </span>to<span class="w"> </span>vendor
+<a id="__codelineno-1-133" name="__codelineno-1-133" href="#__codelineno-1-133"></a><span class="w">                                      </span>version
+<a id="__codelineno-1-134" name="__codelineno-1-134" href="#__codelineno-1-134"></a><span class="w">  </span>add-wants<span class="w"> </span>TARGET<span class="w"> </span>UNIT...<span class="w">            </span>Add<span class="w"> </span><span class="s1">&#39;Wants&#39;</span><span class="w"> </span>dependency<span class="w"> </span><span class="k">for</span><span class="w"> </span>the<span class="w"> </span>target
+<a id="__codelineno-1-135" name="__codelineno-1-135" href="#__codelineno-1-135"></a><span class="w">                                      </span>on<span class="w"> </span>specified<span class="w"> </span>one<span class="w"> </span>or<span class="w"> </span>more<span class="w"> </span>units
+<a id="__codelineno-1-136" name="__codelineno-1-136" href="#__codelineno-1-136"></a><span class="w">  </span>add-requires<span class="w"> </span>TARGET<span class="w"> </span>UNIT...<span class="w">         </span>Add<span class="w"> </span><span class="s1">&#39;Requires&#39;</span><span class="w"> </span>dependency<span class="w"> </span><span class="k">for</span><span class="w"> </span>the<span class="w"> </span>target
+<a id="__codelineno-1-137" name="__codelineno-1-137" href="#__codelineno-1-137"></a><span class="w">                                      </span>on<span class="w"> </span>specified<span class="w"> </span>one<span class="w"> </span>or<span class="w"> </span>more<span class="w"> </span>units
+<a id="__codelineno-1-138" name="__codelineno-1-138" href="#__codelineno-1-138"></a><span class="w">  </span>edit<span class="w"> </span>UNIT...<span class="w">                        </span>Edit<span class="w"> </span>one<span class="w"> </span>or<span class="w"> </span>more<span class="w"> </span>unit<span class="w"> </span>files
+<a id="__codelineno-1-139" name="__codelineno-1-139" href="#__codelineno-1-139"></a><span class="w">  </span>get-default<span class="w">                         </span>Get<span class="w"> </span>the<span class="w"> </span>name<span class="w"> </span>of<span class="w"> </span>the<span class="w"> </span>default<span class="w"> </span>target
+<a id="__codelineno-1-140" name="__codelineno-1-140" href="#__codelineno-1-140"></a><span class="w">  </span>set-default<span class="w"> </span>TARGET<span class="w">                  </span>Set<span class="w"> </span>the<span class="w"> </span>default<span class="w"> </span>target
+<a id="__codelineno-1-141" name="__codelineno-1-141" href="#__codelineno-1-141"></a>
+<a id="__codelineno-1-142" name="__codelineno-1-142" href="#__codelineno-1-142"></a>Machine<span class="w"> </span>Commands:
+<a id="__codelineno-1-143" name="__codelineno-1-143" href="#__codelineno-1-143"></a><span class="w">  </span>list-machines<span class="w"> </span><span class="o">[</span>PATTERN...<span class="o">]</span><span class="w">          </span>List<span class="w"> </span><span class="nb">local</span><span class="w"> </span>containers<span class="w"> </span>and<span class="w"> </span>host
+<a id="__codelineno-1-144" name="__codelineno-1-144" href="#__codelineno-1-144"></a>
+<a id="__codelineno-1-145" name="__codelineno-1-145" href="#__codelineno-1-145"></a>Job<span class="w"> </span>Commands:
+<a id="__codelineno-1-146" name="__codelineno-1-146" href="#__codelineno-1-146"></a><span class="w">  </span>list-jobs<span class="w"> </span><span class="o">[</span>PATTERN...<span class="o">]</span><span class="w">              </span>List<span class="w"> </span><span class="nb">jobs</span>
+<a id="__codelineno-1-147" name="__codelineno-1-147" href="#__codelineno-1-147"></a><span class="w">  </span>cancel<span class="w"> </span><span class="o">[</span>JOB...<span class="o">]</span><span class="w">                     </span>Cancel<span class="w"> </span>all,<span class="w"> </span>one,<span class="w"> </span>or<span class="w"> </span>more<span class="w"> </span><span class="nb">jobs</span>
+<a id="__codelineno-1-148" name="__codelineno-1-148" href="#__codelineno-1-148"></a>
+<a id="__codelineno-1-149" name="__codelineno-1-149" href="#__codelineno-1-149"></a>Environment<span class="w"> </span>Commands:
+<a id="__codelineno-1-150" name="__codelineno-1-150" href="#__codelineno-1-150"></a><span class="w">  </span>show-environment<span class="w">                    </span>Dump<span class="w"> </span>environment
+<a id="__codelineno-1-151" name="__codelineno-1-151" href="#__codelineno-1-151"></a><span class="w">  </span>set-environment<span class="w"> </span><span class="nv">VARIABLE</span><span class="o">=</span>VALUE...<span class="w">   </span>Set<span class="w"> </span>one<span class="w"> </span>or<span class="w"> </span>more<span class="w"> </span>environment<span class="w"> </span>variables
+<a id="__codelineno-1-152" name="__codelineno-1-152" href="#__codelineno-1-152"></a><span class="w">  </span>unset-environment<span class="w"> </span>VARIABLE...<span class="w">       </span>Unset<span class="w"> </span>one<span class="w"> </span>or<span class="w"> </span>more<span class="w"> </span>environment<span class="w"> </span>variables
+<a id="__codelineno-1-153" name="__codelineno-1-153" href="#__codelineno-1-153"></a><span class="w">  </span>import-environment<span class="w"> </span><span class="o">[</span>VARIABLE...<span class="o">]</span><span class="w">    </span>Import<span class="w"> </span>all<span class="w"> </span>or<span class="w"> </span>some<span class="w"> </span>environment<span class="w"> </span>variables
+<a id="__codelineno-1-154" name="__codelineno-1-154" href="#__codelineno-1-154"></a>
+<a id="__codelineno-1-155" name="__codelineno-1-155" href="#__codelineno-1-155"></a>Manager<span class="w"> </span>Lifecycle<span class="w"> </span>Commands:
+<a id="__codelineno-1-156" name="__codelineno-1-156" href="#__codelineno-1-156"></a><span class="w">  </span>daemon-reload<span class="w">                       </span>Reload<span class="w"> </span>systemd<span class="w"> </span>manager<span class="w"> </span>configuration
+<a id="__codelineno-1-157" name="__codelineno-1-157" href="#__codelineno-1-157"></a><span class="w">  </span>daemon-reexec<span class="w">                       </span>Reexecute<span class="w"> </span>systemd<span class="w"> </span>manager
+<a id="__codelineno-1-158" name="__codelineno-1-158" href="#__codelineno-1-158"></a>
+<a id="__codelineno-1-159" name="__codelineno-1-159" href="#__codelineno-1-159"></a>System<span class="w"> </span>Commands:
+<a id="__codelineno-1-160" name="__codelineno-1-160" href="#__codelineno-1-160"></a><span class="w">  </span>is-system-running<span class="w">                   </span>Check<span class="w"> </span>whether<span class="w"> </span>system<span class="w"> </span>is<span class="w"> </span>fully<span class="w"> </span>running
+<a id="__codelineno-1-161" name="__codelineno-1-161" href="#__codelineno-1-161"></a><span class="w">  </span>default<span class="w">                             </span>Enter<span class="w"> </span>system<span class="w"> </span>default<span class="w"> </span>mode
+<a id="__codelineno-1-162" name="__codelineno-1-162" href="#__codelineno-1-162"></a><span class="w">  </span>rescue<span class="w">                              </span>Enter<span class="w"> </span>system<span class="w"> </span>rescue<span class="w"> </span>mode
+<a id="__codelineno-1-163" name="__codelineno-1-163" href="#__codelineno-1-163"></a><span class="w">  </span>emergency<span class="w">                           </span>Enter<span class="w"> </span>system<span class="w"> </span>emergency<span class="w"> </span>mode
+<a id="__codelineno-1-164" name="__codelineno-1-164" href="#__codelineno-1-164"></a><span class="w">  </span>halt<span class="w">                                </span>Shut<span class="w"> </span>down<span class="w"> </span>and<span class="w"> </span>halt<span class="w"> </span>the<span class="w"> </span>system
+<a id="__codelineno-1-165" name="__codelineno-1-165" href="#__codelineno-1-165"></a><span class="w">  </span>poweroff<span class="w">                            </span>Shut<span class="w"> </span>down<span class="w"> </span>and<span class="w"> </span>power-off<span class="w"> </span>the<span class="w"> </span>system
+<a id="__codelineno-1-166" name="__codelineno-1-166" href="#__codelineno-1-166"></a><span class="w">  </span>reboot<span class="w"> </span><span class="o">[</span>ARG<span class="o">]</span><span class="w">                        </span>Shut<span class="w"> </span>down<span class="w"> </span>and<span class="w"> </span>reboot<span class="w"> </span>the<span class="w"> </span>system
+<a id="__codelineno-1-167" name="__codelineno-1-167" href="#__codelineno-1-167"></a><span class="w">  </span>kexec<span class="w">                               </span>Shut<span class="w"> </span>down<span class="w"> </span>and<span class="w"> </span>reboot<span class="w"> </span>the<span class="w"> </span>system<span class="w"> </span>with<span class="w"> </span>kexec
+<a id="__codelineno-1-168" name="__codelineno-1-168" href="#__codelineno-1-168"></a><span class="w">  </span><span class="nb">exit</span><span class="w"> </span><span class="o">[</span>EXIT_CODE<span class="o">]</span><span class="w">                    </span>Request<span class="w"> </span>user<span class="w"> </span>instance<span class="w"> </span>or<span class="w"> </span>container<span class="w"> </span><span class="nb">exit</span>
+<a id="__codelineno-1-169" name="__codelineno-1-169" href="#__codelineno-1-169"></a><span class="w">  </span>switch-root<span class="w"> </span>ROOT<span class="w"> </span><span class="o">[</span>INIT<span class="o">]</span><span class="w">             </span>Change<span class="w"> </span>to<span class="w"> </span>a<span class="w"> </span>different<span class="w"> </span>root<span class="w"> </span>file<span class="w"> </span>system
+<a id="__codelineno-1-170" name="__codelineno-1-170" href="#__codelineno-1-170"></a><span class="w">  </span><span class="nb">suspend</span><span class="w">                             </span>Suspend<span class="w"> </span>the<span class="w"> </span>system
+<a id="__codelineno-1-171" name="__codelineno-1-171" href="#__codelineno-1-171"></a><span class="w">  </span>hibernate<span class="w">                           </span>Hibernate<span class="w"> </span>the<span class="w"> </span>system
+<a id="__codelineno-1-172" name="__codelineno-1-172" href="#__codelineno-1-172"></a><span class="w">  </span>hybrid-sleep<span class="w">                        </span>Hibernate<span class="w"> </span>and<span class="w"> </span><span class="nb">suspend</span><span class="w"> </span>the<span class="w"> </span>system
+<a id="__codelineno-1-173" name="__codelineno-1-173" href="#__codelineno-1-173"></a><span class="w">  </span>suspend-then-hibernate<span class="w">              </span>Suspend<span class="w"> </span>the<span class="w"> </span>system,<span class="w"> </span>wake<span class="w"> </span>after<span class="w"> </span>a<span class="w"> </span>period<span class="w"> </span>of
+<a id="__codelineno-1-174" name="__codelineno-1-174" href="#__codelineno-1-174"></a><span class="w">                                      </span><span class="nb">time</span><span class="w"> </span>and<span class="w"> </span>put<span class="w"> </span>it<span class="w"> </span>into<span class="w"> </span>hibernate
+<a id="__codelineno-1-175" name="__codelineno-1-175" href="#__codelineno-1-175"></a>
+<a id="__codelineno-1-176" name="__codelineno-1-176" href="#__codelineno-1-176"></a>See<span class="w"> </span>the<span class="w"> </span>systemctl<span class="o">(</span><span class="m">1</span><span class="o">)</span><span class="w"> </span>man<span class="w"> </span>page<span class="w"> </span><span class="k">for</span><span class="w"> </span>details.
+</code></pre></div>
+<h2 id="examples">Examples</h2>
+<h5 id="show-available-services">Show available services</h5>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>sudo<span class="w"> </span>systemctl
+</code></pre></div>
+<h5 id="show-service-status">Show service status</h5>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>status<span class="w"> </span>&lt;service&gt;
+</code></pre></div>
+<h5 id="start-service">Start service</h5>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>&lt;service&gt;
+</code></pre></div>
+<h5 id="stop-service">Stop service</h5>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>stop<span class="w"> </span>&lt;service&gt;
+</code></pre></div>
+<h5 id="enable-on-startup-under-root">Enable on startup (under root)</h5>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>&lt;service&gt;
+</code></pre></div>
+<h5 id="enable-on-startup-under-current-user">Enable on startup (under current user)</h5>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>--user<span class="w"> </span>&lt;service&gt;
+</code></pre></div>
+<h5 id="show-status-of-all-services">Show status of all services</h5>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>list-units<span class="w"> </span>--type<span class="w"> </span>service<span class="w"> </span>--all
+</code></pre></div>
+<h5 id="show-all-available-services">Show all available services</h5>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>list-unit-files
+</code></pre></div>
+<h5 id="show-all-dependencies-a-service-relies-on">Show all dependencies a service relies on</h5>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>list-dependencies<span class="w"> </span>&lt;service&gt;
+</code></pre></div>
+<h5 id="show-default-run-level">Show default run level</h5>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>get-default
+</code></pre></div>
+<h5 id="change-the-current-run-level-temporarily">Change the current run level (temporarily)</h5>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>isolate<span class="w"> </span>&lt;target&gt;
+</code></pre></div>
+<h5 id="change-the-current-run-level-permanently">Change the current run level (permanently)</h5>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>set-default<span class="w"> </span>&lt;target&gt;
+</code></pre></div>
+<h5 id="create-startup-task-service">Create startup task / service</h5>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/systemd/system/YOUR_SERVICE_NAME.service
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="nv">Description</span><span class="o">=</span>GIVE_YOUR_SERVICE_A_DESCRIPTION
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="nv">Wants</span><span class="o">=</span>network.target
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="nv">After</span><span class="o">=</span>syslog.target<span class="w"> </span>network-online.target
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="o">[</span>Service<span class="o">]</span>
+<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a><span class="nv">Type</span><span class="o">=</span>simple
+<a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a><span class="nv">ExecStart</span><span class="o">=</span>YOUR_COMMAND_HERE
+<a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a><span class="nv">Restart</span><span class="o">=</span>on-failure
+<a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a><span class="nv">RestartSec</span><span class="o">=</span><span class="m">10</span>
+<a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a><span class="nv">KillMode</span><span class="o">=</span>process
+<a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a>
+<a id="__codelineno-15-13" name="__codelineno-15-13" href="#__codelineno-15-13"></a><span class="o">[</span>Install<span class="o">]</span>
+<a id="__codelineno-15-14" name="__codelineno-15-14" href="#__codelineno-15-14"></a><span class="nv">WantedBy</span><span class="o">=</span>multi-user.target
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>daemon-reload
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>YOUR_SERVICE_NAME
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>YOUR_SERVICE_NAME
+</code></pre></div>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://manpages.debian.org/stretch/systemd/systemctl.1.en.html">Debian.org</a></li>
+</ul></p>
+    </article>
+</section>
+            <!-- endblock -->
+
+            <!-- block footer -->
+                <footer>
+    <div class="d-flex flex-sm-row justify-content-between py-2 border-top drac-text-black drac-bg-cyan-green">
+        <a href="https://github.com/dracula/mkdocs" target="_blank" style="padding-left: 1%;"
+            class="footer-text drac-anchor drac-text-black drac-text-purple--hover">
+            Made with Dracula Theme for MkDocs
+        </a>
+    </div>
+</footer>
+            <!-- endblock -->
+        </div>
+
+    </main>
+
+        <script>var base_url = '../..';</script>
+        <script src="../../assets/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+        <script src="../../assets/js/mkdocs.js"></script>
+			<script src="../../search/main.js" defer></script>
+
+<script>const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});</script></body>
+
+</html>

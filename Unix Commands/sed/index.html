@@ -1,0 +1,1764 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+        <title>Sed - Knowledge Base</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+        
+        
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="../../assets/css/darcula-highlight.min.css">
+
+        <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../assets/css/dracula-ui.min.css">
+        <link rel="stylesheet" href="../../assets/css/mkdocs.min.css">
+
+        
+            <link  rel="icon" type="image/x-icon" href="../../assets/img/favicon.ico">
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+                <script>hljs.initHighlightingOnLoad();</script>
+
+ <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+
+<body class="drac-bg-black-secondary drac-text-grey-ternary drac-text drac-scrollbar-purple">
+
+    <main class="d-flex">
+
+        <!-- block sidebar -->
+            <nav id="sidebar" class="sidebar drac-bg-black">
+    <div class="custom-menu">
+        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Menu</span>
+        </button>
+    </div>
+
+    <div class="p-4">
+        
+            <img class="logo" src="../../assets/images/kb.png" height="150px">
+        
+
+        <div class="drac-text-center">
+            
+                <span class="drac-text drac-line-height drac-text-white">Knowledge Base</span>
+            
+        </div>
+
+        <div class="drac-box flex-column">
+            <ul class="dot-ul">
+                <li><div class="dot-li drac-bg-cyan"></div></li>
+                <li><div class="dot-li drac-bg-green"></div></li>
+                <li><div class="dot-li drac-bg-orange"></div></li>
+                <li><div class="dot-li drac-bg-pink"></div></li>
+                <li><div class="dot-li drac-bg-purple"></div></li>
+                <li><div class="dot-li drac-bg-red"></div></li>
+                <li><div class="dot-li drac-bg-yellow"></div></li>
+            </ul>
+        </div>
+
+        <hr class="drac-divider" />
+
+        <!-- block menu -->
+        <ul class="mb-5 drac-list drac-list-none">
+            
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    Homepage
+                </a>
+            </li>
+            <li class="drac-box">
+                <a href="../../page2/"
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    Page 2
+                </a>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#cves-collapse" aria-expanded="false">
+                    CVEs
+                </a>
+                <div class="collapse" id="cves-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2007-1036/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2007-1036
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2012-0002/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2012-0002
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2012-1675/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2012-1675
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2013-4786/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2013-4786
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2014-0224/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2014-0224
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2014-6321/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2014-6321
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2014-8272/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2014-8272
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2016-1287/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2016-1287
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2016-2107/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2016-2107
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2017-0143/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2017-0143
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2017-12542/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2017-12542
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2017-8917/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2017-8917
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2018-10993/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2018-10993
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2019-0686/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2019-0686
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2019-0708/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2019-0708
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2019-18935/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2019-18935
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2019-19781/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2019-19781
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2019-2725/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2019-2725
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2019-5392/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2019-5392
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2020-0609/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2020-0609
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2020-0796/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2020-0796
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2020-10487/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2020-10487
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2020-1350/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2020-1350
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2020-1472/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2020-1472
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2020-14882/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2020-14882
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2020-5902/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2020-5902
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2021-26855/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2021-26855
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2021-27850/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2021-27850
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2021-34473/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2021-34473
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2021-34527/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2021-34527
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2021-4034/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2021-4034
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2021-40449/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2021-40449
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2021-44228/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2021-44228
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2022-0847/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2022-0847
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2022-21882/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2022-21882
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../CVEs/CVE-2022-30190/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CVE-2022-30190
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#cheatsheets-collapse" aria-expanded="false">
+                    Cheatsheets
+                </a>
+                <div class="collapse" id="cheatsheets-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Cheatsheets/Active%20Directory%20Pentesting/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Active Directory Pentesting Cheatsheet
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Cheatsheets/Bash%20Scripting/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Bash Scripting
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Cheatsheets/Chrome%20URLs/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Chrome URLs/Flags
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Cheatsheets/Default%20Credentials%20Cheat%20Sheet/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Default Credentials Cheat Sheet
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Cheatsheets/Exchange%20Versions/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Exchange Versions
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Cheatsheets/GitHub%20Dorks/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            GitHub Dorks
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Cheatsheets/Google%20Dorks/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Google Dorks
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Cheatsheets/Headers%20%26%20Files/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Headers & Files
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Cheatsheets/List%20of%20TLDs/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            List of TLDs
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Cheatsheets/Miscellaneous/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Miscellaneous
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Cheatsheets/Netmasks%20%26%20Subnetting/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Netmasks & Subnetting
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Cheatsheets/PrivEsc%20Mindmap/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            PrivEsc Mindmap
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Cheatsheets/Regex/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Regex
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Cheatsheets/Windows%20Security%20Log%20References/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Windows Security Log References
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Cheatsheets/XSS/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            XSS
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Cheatsheets/XXE%20Injection/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            XML External Entity (XXE) Injection
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#macos-commands-collapse" aria-expanded="false">
+                    MacOS Commands
+                </a>
+                <div class="collapse" id="macos-commands-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../MacOS%20Commands/caffeinate/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Caffeinate
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../MacOS%20Commands/ditto/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ditto
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../MacOS%20Commands/firmwarepasswd/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Firmwarepasswd
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../MacOS%20Commands/ipconfig/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ipconfig
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../MacOS%20Commands/networkquality/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Networkquality
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../MacOS%20Commands/powermetrics/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Powermetrics
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../MacOS%20Commands/scutil/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Scutil
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../MacOS%20Commands/security/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Security
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../MacOS%20Commands/sha2/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Sha2
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../MacOS%20Commands/softwareupdate/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Softwareupdate
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../MacOS%20Commands/spctl/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Spctl
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../MacOS%20Commands/system_profiler/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            System_profiler
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../MacOS%20Commands/tweaks/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Tweaks
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class=" active 
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#unix-commands-collapse" aria-expanded="false">
+                    Unix Commands
+                </a>
+                <div class="collapse" id="unix-commands-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../apropos/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Apropos
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../apt/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Apt
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../awk/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Awk
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../base64/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Base64
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../biosdecode/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Biosdecode
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../blkid/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Blkid
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../cal/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Cal
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../cat/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Cat
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../chage/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Chage
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../chmod/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Chmod
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../chsh/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Chsh
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../comm/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Comm
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../crontab/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Crontab
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../cut/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Cut
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../date/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Date
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../dd/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Dd
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../delv/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Delv
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../df/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Df
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../diff/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Diff
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../dig/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Dig
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../dmesg/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Dmesg
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../faketime/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Faketime
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../fdisk/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Fdisk
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../file/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            File
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../find/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Find
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../fls/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Fls
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../free/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Free
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../ftp/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ftp
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../ghostscript/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ghostscript
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../gpg/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Gpg
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../grep/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Grep
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../groupadd/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Groupadd
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../groupdel/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Groupdel
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../hdparm/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Hdparm
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../head/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Head
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../history/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            History
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../host/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Host
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../ifconfig/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ifconfig
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../iotop/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Iotop
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../ip/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ip
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../iwconfig/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Iwconfig
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../journalctl/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Journalctl
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../kill/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Kill
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../ln/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ln
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../locate/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Locate
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../ls/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ls
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../lsb_release/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Lsb_release
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../lsblk/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Lsblk
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../lshw/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Lshw
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../lsmod/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Lsmod
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../lspci/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Lspci
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../lsusb/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Lsusb
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../lvextend/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Lvextend
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../md5sum/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Md5sum
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../mkdir/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Mkdir
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../mkpasswd/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Mkpasswd
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../modprobe/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Modprobe
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../mount/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Mount
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../mtr/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Mtr
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../nc/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Nc
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../ncdu/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ncdu
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../netplan/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Netplan
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../netstat/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Netstat
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../network-manager/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Network-manager
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../nm%20connection%20editor/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Nm Connection Manager
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../nmcli/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Nmcli
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../nslookup/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Nslookup
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../ntp/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ntp
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../passwd/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Passwd
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../pdbedit/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Pdbedit
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../ps/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ps
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../rev/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Rev
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../scp/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Scp
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../script/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Script
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="./"
+            class=" active 
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Sed
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../sha1sum/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Sha1sum
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../sha256sum/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Sha256sum
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../shuf/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Shuf
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../sort/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Sort
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../split/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Split
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../ss/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ss
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../strings/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Strings
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../sudo/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Sudo
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../sudoedit/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Sudoedit
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../systemctl/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Systemctl
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../tail/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Tail
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../tar/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Tar
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../tee/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Tee
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../tftp/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Tftp
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../timedatectl/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Timedatectl
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../touch/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Touch
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../tr/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Tr
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../uname/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Uname
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../upower/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Upower
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../vimdiff/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Vimdiff
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../watch/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Watch
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../wc/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Wc
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../wget/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Wget
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../xargs/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Xargs
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../xxd/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Xxd
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#windows-commands-collapse" aria-expanded="false">
+                    Windows Commands
+                </a>
+                <div class="collapse" id="windows-commands-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Windows%20Commands/azureAD/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            AzureAD
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Windows%20Commands/cmd/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CMD - Command Prompt
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Windows%20Commands/godmode/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            GodMode
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Windows%20Commands/ipconfig/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ipconfig
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Windows%20Commands/nbtstat/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Nbtstat
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Windows%20Commands/net%20group/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Net Group
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Windows%20Commands/net%20user/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Net User
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Windows%20Commands/net%20view/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Net View
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Windows%20Commands/netsh/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Netsh
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Windows%20Commands/nltest/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Nltest
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Windows%20Commands/nslookup/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Nslookup
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Windows%20Commands/powershell/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Powershell
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Windows%20Commands/regedit/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Regedit
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Windows%20Commands/route/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Route
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Windows%20Commands/schtasks/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Schtasks
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <!-- endblock -->
+    </div>
+</nav>
+        <!-- endblock -->
+
+        <nav class="divider drac-bg-purple-cyan"></nav>
+
+        <div class="content">
+            <!-- block header -->
+                <header>
+    <nav class="navbar navbar-expand-xl drac-bg-purple">
+        <div class="container-fluid">
+            
+            <button class="navbar-toggler w-100 text-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
+                aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
+                <ul class="navbar-nav text-md-center">
+
+                    <!-- block preview -->
+                    <li class="nav-item">
+                            
+        <div class="container">
+            <div class="row row-preview">
+                <div class="col">
+                    <a href="../script/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="../sha1sum/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover" style="padding-left: 3%;">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block search -->
+                    <li class="nav-item"><div role="search" class="search-box">
+	<form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+		<input type="text" name="q" class="drac-input drac-input-search drac-input-white drac-text-white drac-bg-black-secondary"
+		placeholder="Search docs" title="Type search term here" />
+	</form>
+</div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block source -->
+                    <li class="nav-item">
+                        
+                    </li>
+                    <!--  endblock -->
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+            <!-- endblock -->
+
+            <!-- block content -->
+                <section class="p-md-5 section-content">
+    <article>
+        <p><h1 id="sed">Sed</h1>
+<p>Stream editor used for filtering and transforming text in a pipeline or file editing process.</p>
+<h2 id="usage">Usage</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sed<span class="w"> </span><span class="o">[</span>OPTION<span class="o">]</span>...<span class="w"> </span><span class="o">{</span>script-only-if-no-other-script<span class="o">}</span><span class="w"> </span><span class="o">[</span>input-file<span class="o">]</span>...
+</code></pre></div>
+<h2 id="flags">Flags</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Usage:<span class="w"> </span>sed<span class="w"> </span><span class="o">[</span>OPTION<span class="o">]</span>...<span class="w"> </span><span class="o">{</span>script-only-if-no-other-script<span class="o">}</span><span class="w"> </span><span class="o">[</span>input-file<span class="o">]</span>...
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span>-n,<span class="w"> </span>--quiet,<span class="w"> </span>--silent
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">                 </span>suppress<span class="w"> </span>automatic<span class="w"> </span>printing<span class="w"> </span>of<span class="w"> </span>pattern<span class="w"> </span>space
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">      </span>--debug
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">                 </span>annotate<span class="w"> </span>program<span class="w"> </span>execution
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">  </span>-e<span class="w"> </span>script,<span class="w"> </span>--expression<span class="o">=</span>script
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">                 </span>add<span class="w"> </span>the<span class="w"> </span>script<span class="w"> </span>to<span class="w"> </span>the<span class="w"> </span>commands<span class="w"> </span>to<span class="w"> </span>be<span class="w"> </span>executed
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">  </span>-f<span class="w"> </span>script-file,<span class="w"> </span>--file<span class="o">=</span>script-file
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">                 </span>add<span class="w"> </span>the<span class="w"> </span>contents<span class="w"> </span>of<span class="w"> </span>script-file<span class="w"> </span>to<span class="w"> </span>the<span class="w"> </span>commands<span class="w"> </span>to<span class="w"> </span>be<span class="w"> </span>executed
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">  </span>--follow-symlinks
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">                 </span>follow<span class="w"> </span>symlinks<span class="w"> </span>when<span class="w"> </span>processing<span class="w"> </span><span class="k">in</span><span class="w"> </span>place
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">  </span>-i<span class="o">[</span>SUFFIX<span class="o">]</span>,<span class="w"> </span>--in-place<span class="o">[=</span>SUFFIX<span class="o">]</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">                 </span>edit<span class="w"> </span>files<span class="w"> </span><span class="k">in</span><span class="w"> </span>place<span class="w"> </span><span class="o">(</span>makes<span class="w"> </span>backup<span class="w"> </span><span class="k">if</span><span class="w"> </span>SUFFIX<span class="w"> </span>supplied<span class="o">)</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">  </span>-l<span class="w"> </span>N,<span class="w"> </span>--line-length<span class="o">=</span>N
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">                 </span>specify<span class="w"> </span>the<span class="w"> </span>desired<span class="w"> </span>line-wrap<span class="w"> </span>length<span class="w"> </span><span class="k">for</span><span class="w"> </span>the<span class="w"> </span><span class="sb">`</span>l<span class="err">&#39;</span><span class="w"> </span><span class="nb">command</span>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">  </span>--posix
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="w">                 </span>disable<span class="w"> </span>all<span class="w"> </span>GNU<span class="w"> </span>extensions.
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="w">  </span>-E,<span class="w"> </span>-r,<span class="w"> </span>--regexp-extended
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="w">                 </span>use<span class="w"> </span>extended<span class="w"> </span>regular<span class="w"> </span>expressions<span class="w"> </span><span class="k">in</span><span class="w"> </span>the<span class="w"> </span>script
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="w">                 </span><span class="o">(</span><span class="k">for</span><span class="w"> </span>portability<span class="w"> </span>use<span class="w"> </span>POSIX<span class="w"> </span>-E<span class="o">)</span>.
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="w">  </span>-s,<span class="w"> </span>--separate
+<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="w">                 </span>consider<span class="w"> </span>files<span class="w"> </span>as<span class="w"> </span>separate<span class="w"> </span>rather<span class="w"> </span>than<span class="w"> </span>as<span class="w"> </span>a<span class="w"> </span>single,
+<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a><span class="w">                 </span>continuous<span class="w"> </span>long<span class="w"> </span>stream.
+<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a><span class="w">      </span>--sandbox
+<a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a><span class="w">                 </span>operate<span class="w"> </span><span class="k">in</span><span class="w"> </span>sandbox<span class="w"> </span>mode<span class="w"> </span><span class="o">(</span>disable<span class="w"> </span>e/r/w<span class="w"> </span>commands<span class="o">)</span>.
+<a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a><span class="w">  </span>-u,<span class="w"> </span>--unbuffered
+<a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a><span class="w">                 </span>load<span class="w"> </span>minimal<span class="w"> </span>amounts<span class="w"> </span>of<span class="w"> </span>data<span class="w"> </span>from<span class="w"> </span>the<span class="w"> </span>input<span class="w"> </span>files<span class="w"> </span>and<span class="w"> </span>flush
+<a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a><span class="w">                 </span>the<span class="w"> </span>output<span class="w"> </span>buffers<span class="w"> </span>more<span class="w"> </span>often
+<a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a><span class="w">  </span>-z,<span class="w"> </span>--null-data
+<a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a><span class="w">                 </span>separate<span class="w"> </span>lines<span class="w"> </span>by<span class="w"> </span>NUL<span class="w"> </span>characters
+<a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a><span class="w">      </span>--help<span class="w">     </span>display<span class="w"> </span>this<span class="w"> </span><span class="nb">help</span><span class="w"> </span>and<span class="w"> </span><span class="nb">exit</span>
+<a id="__codelineno-1-33" name="__codelineno-1-33" href="#__codelineno-1-33"></a><span class="w">      </span>--version<span class="w">  </span>output<span class="w"> </span>version<span class="w"> </span>information<span class="w"> </span>and<span class="w"> </span><span class="nb">exit</span>
+<a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a>
+<a id="__codelineno-1-35" name="__codelineno-1-35" href="#__codelineno-1-35"></a>If<span class="w"> </span>no<span class="w"> </span>-e,<span class="w"> </span>--expression,<span class="w"> </span>-f,<span class="w"> </span>or<span class="w"> </span>--file<span class="w"> </span>option<span class="w"> </span>is<span class="w"> </span>given,<span class="w"> </span><span class="k">then</span><span class="w"> </span>the<span class="w"> </span>first
+<a id="__codelineno-1-36" name="__codelineno-1-36" href="#__codelineno-1-36"></a>non-option<span class="w"> </span>argument<span class="w"> </span>is<span class="w"> </span>taken<span class="w"> </span>as<span class="w"> </span>the<span class="w"> </span>sed<span class="w"> </span>script<span class="w"> </span>to<span class="w"> </span>interpret.<span class="w">  </span>All
+<a id="__codelineno-1-37" name="__codelineno-1-37" href="#__codelineno-1-37"></a>remaining<span class="w"> </span>arguments<span class="w"> </span>are<span class="w"> </span>names<span class="w"> </span>of<span class="w"> </span>input<span class="w"> </span>files<span class="p">;</span><span class="w"> </span><span class="k">if</span><span class="w"> </span>no<span class="w"> </span>input<span class="w"> </span>files<span class="w"> </span>are
+<a id="__codelineno-1-38" name="__codelineno-1-38" href="#__codelineno-1-38"></a>specified,<span class="w"> </span><span class="k">then</span><span class="w"> </span>the<span class="w"> </span>standard<span class="w"> </span>input<span class="w"> </span>is<span class="w"> </span>read.
+<a id="__codelineno-1-39" name="__codelineno-1-39" href="#__codelineno-1-39"></a>
+<a id="__codelineno-1-40" name="__codelineno-1-40" href="#__codelineno-1-40"></a>GNU<span class="w"> </span>sed<span class="w"> </span>home<span class="w"> </span>page:<span class="w"> </span>&lt;https://www.gnu.org/software/sed/&gt;.
+<a id="__codelineno-1-41" name="__codelineno-1-41" href="#__codelineno-1-41"></a>General<span class="w"> </span><span class="nb">help</span><span class="w"> </span>using<span class="w"> </span>GNU<span class="w"> </span>software:<span class="w"> </span>&lt;https://www.gnu.org/gethelp/&gt;.
+<a id="__codelineno-1-42" name="__codelineno-1-42" href="#__codelineno-1-42"></a>E-mail<span class="w"> </span>bug<span class="w"> </span>reports<span class="w"> </span>to:<span class="w"> </span>&lt;bug-sed@gnu.org&gt;.
+</code></pre></div>
+<h2 id="examples">Examples</h2>
+<h5 id="replace-string-with-new-string">Replace string with new string</h5>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>sed<span class="w"> </span><span class="s1">&#39;s/&lt;string-to-replace&gt;/&lt;new-string&gt;&#39;</span><span class="w"> </span>&lt;file&gt;
+</code></pre></div>
+<h5 id="replace-one-occurrence-per-line">Replace one occurrence per line</h5>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>$<span class="w"> </span>cat<span class="w"> </span>testfile.txt
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>This<span class="w"> </span>is<span class="w"> </span>first<span class="w"> </span>line<span class="w"> </span><span class="nb">test</span><span class="w"> </span>content<span class="w"> </span><span class="k">for</span><span class="w"> </span>a<span class="w"> </span><span class="nb">test</span><span class="w"> </span>file.
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>This<span class="w"> </span>is<span class="w"> </span>second<span class="w"> </span>line<span class="w"> </span><span class="nb">test</span><span class="w"> </span>content<span class="w"> </span><span class="k">for</span><span class="w"> </span>a<span class="w"> </span><span class="nb">test</span><span class="w"> </span>file.
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>$<span class="w"> </span>cat<span class="w"> </span>testfile.txt<span class="w"> </span><span class="p">|</span><span class="w"> </span>sed<span class="w"> </span><span class="s1">&#39;s/test/real/&#39;</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>This<span class="w"> </span>is<span class="w"> </span>first<span class="w"> </span>line<span class="w"> </span>real<span class="w"> </span>content<span class="w"> </span><span class="k">for</span><span class="w"> </span>a<span class="w"> </span><span class="nb">test</span><span class="w"> </span>file.
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>This<span class="w"> </span>is<span class="w"> </span>second<span class="w"> </span>line<span class="w"> </span>real<span class="w"> </span>content<span class="w"> </span><span class="k">for</span><span class="w"> </span>a<span class="w"> </span><span class="nb">test</span><span class="w"> </span>file.
+</code></pre></div>
+<h5 id="replace-all-occurrences-per-line-add-g-can-also-be-number-per-line">Replace all occurrences per line, add 'g', can also be number per line</h5>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>$<span class="w"> </span>cat<span class="w"> </span>testfile.txt
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>This<span class="w"> </span>is<span class="w"> </span>first<span class="w"> </span>line<span class="w"> </span><span class="nb">test</span><span class="w"> </span>content<span class="w"> </span><span class="k">for</span><span class="w"> </span>a<span class="w"> </span><span class="nb">test</span><span class="w"> </span>file.
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>This<span class="w"> </span>is<span class="w"> </span>second<span class="w"> </span>line<span class="w"> </span><span class="nb">test</span><span class="w"> </span>content<span class="w"> </span><span class="k">for</span><span class="w"> </span>a<span class="w"> </span><span class="nb">test</span><span class="w"> </span>file.
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>$<span class="w"> </span>cat<span class="w"> </span>testfile.txt<span class="w"> </span><span class="p">|</span><span class="w"> </span>sed<span class="w"> </span><span class="s1">&#39;s/test/real/g&#39;</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>This<span class="w"> </span>is<span class="w"> </span>first<span class="w"> </span>line<span class="w"> </span>real<span class="w"> </span>content<span class="w"> </span><span class="k">for</span><span class="w"> </span>a<span class="w"> </span>real<span class="w"> </span>file.
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>This<span class="w"> </span>is<span class="w"> </span>second<span class="w"> </span>line<span class="w"> </span>real<span class="w"> </span>content<span class="w"> </span><span class="k">for</span><span class="w"> </span>a<span class="w"> </span>real<span class="w"> </span>file.
+</code></pre></div>
+<h5 id="remove-specific-lines-from-files">Remove specific lines from file(s)</h5>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>find<span class="w"> </span>-type<span class="w"> </span>f<span class="w"> </span>-name<span class="w"> </span><span class="s2">&quot;*.md&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>xargs<span class="w"> </span>sed<span class="w"> </span>-i<span class="w"> </span><span class="s1">&#39;2d;4,6d;8,10d;12d;14,26d;28d;30,31d;33,34d&#39;</span>
+</code></pre></div>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://linux.die.net/man/1/sed">Linux.die.net</a></li>
+<li><a href="https://www.gnu.org/software/sed/manual/sed.html">Gnu.org - sed</a></li>
+</ul></p>
+    </article>
+</section>
+            <!-- endblock -->
+
+            <!-- block footer -->
+                <footer>
+    <div class="d-flex flex-sm-row justify-content-between py-2 border-top drac-text-black drac-bg-cyan-green">
+        <a href="https://github.com/dracula/mkdocs" target="_blank" style="padding-left: 1%;"
+            class="footer-text drac-anchor drac-text-black drac-text-purple--hover">
+            Made with Dracula Theme for MkDocs
+        </a>
+    </div>
+</footer>
+            <!-- endblock -->
+        </div>
+
+    </main>
+
+        <script>var base_url = '../..';</script>
+        <script src="../../assets/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+        <script src="../../assets/js/mkdocs.js"></script>
+			<script src="../../search/main.js" defer></script>
+
+<script>const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});</script></body>
+
+</html>
